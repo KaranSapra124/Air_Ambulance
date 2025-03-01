@@ -30,7 +30,7 @@ const Services = () => {
 
   return (
     <>
-      <ScrollAnimation animateIn="backInUp" animateOnce>
+      <ScrollAnimation animateIn="backInUp" duration={1.5}>
         <Container>
           <Carousel
             autoplay
