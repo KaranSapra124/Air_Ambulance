@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../Global/Container";
 import { FaCalendar, FaUser } from "react-icons/fa6";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Blogs = () => {
   const blogsData = [
@@ -26,34 +27,47 @@ const Blogs = () => {
     },
   ];
   return (
-    <Container>
-      <h1 className="text-2xl text-center my-2 font-bold text-primary-color">Our Blogs</h1>
-      <div className="flex max-w-screen-lg mx-auto justify-between">
-        {blogsData?.map((elem, index) => {
-          return (
-            <>
-              <div className="w-64 relative h-96 rounded-4xl hover:scale-105 transition-all cursor-pointer bg-primary-color">
-                <img className="w-full" src={elem?.image} alt="" srcset="" />
-                <div className="bg-[#FEFFDE] flex flex-col gap-2 w-52 mx-auto top-40 p-2 rounded inset-0 absolute">
-                  <div className="flex justify-between">
-                    <div className="flex  items-center">
-                      <FaCalendar className="text-primary-color text-xs mx-0.5" />
-                      <span className="text-xs font-semibold">{elem?.date}</span>
+    <ScrollAnimation animateIn="fadeIn" duration={1.5} >
+      <Container>
+        <h1 className="text-2xl text-center my-4 font-bold text-primary-color">
+          Our Blogs
+        </h1>
+        <div className="flex max-w-screen-xl items-center mx-auto justify-between">
+          {blogsData?.map((elem, index) => {
+            return (
+              <>
+                <div className="w-72 shadow-lg shadow-black relative h-96 rounded-4xl hover:scale-105 transition-all cursor-pointer bg-primary-color">
+                  <img className="w-full" src={elem?.image} alt="" srcset="" />
+                  <div className="bg-[#FEFFDE] flex flex-col gap-2 w-52 mx-auto top-40 p-2 rounded inset-0 absolute">
+                    <div className="flex justify-between">
+                      <div className="flex  items-center">
+                        <FaCalendar className="text-primary-color text-xs mx-0.5" />
+                        <span className="text-xs font-semibold">
+                          {elem?.date}
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <FaUser className="text-primary-color text-xs mx-0.5" />
+                        <span className="text-xs font-semibold">admin</span>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <FaUser className="text-primary-color text-xs mx-0.5" />
-                      <span className="text-xs font-semibold">admin</span>
-                    </div>
+                    <h1 className="text-[0.7rem] text-primary-color font-extrabold text-center">
+                      {elem?.title}
+                    </h1>
+                    <p className="text-xs text-center text-gray-900 font-medium">
+                      {elem?.desc}
+                    </p>
                   </div>
-                  <h1 className="text-sm text-primary-color font-bold text-center">{elem?.title}</h1>
-                  <p className="text-xs text-center text-gray-900 font-semibold">{elem?.desc}</p>
                 </div>
-              </div>
-            </>
-          );
-        })}
-      </div>
-    </Container>
+                {index !== blogsData.length - 1 && (
+                  <div className="h-1 w-12 bg-primary-color rounded-full rotate-90"></div>
+                )}
+              </>
+            );
+          })}
+        </div>
+      </Container>
+    </ScrollAnimation>
   );
 };
 
