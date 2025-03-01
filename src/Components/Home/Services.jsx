@@ -43,7 +43,7 @@ const Services = () => {
         {servicesArr?.map((elem, index) => (
           <div
             key={index}
-            className="bg-primary-color   max-w-fit p-4 rounded-xl shadow-xl hover:scale-105 transition-all cursor-pointer flex flex-col  items-center text-white border-2 border-gray-200"
+            className="bg-primary-color    p-4 rounded-xl shadow-xl hover:scale-105 transition-all cursor-pointer flex flex-col  items-center text-white border-2 border-gray-200"
           >
             <img
               src={elem?.image}
@@ -70,12 +70,12 @@ const Services = () => {
 const AmbulanceConnection = () => {
   return (
     <Container>
-      <div className="bg-primary-color relative h-80 flex max-w-screen-lg mx-auto rounded-xl shadow-lg p-6">
+      <div className="bg-primary-color relative h-80 flex max-w-screen-xl mx-auto rounded-xl shadow-lg p-6">
         <div className="w-1/2 flex flex-col justify-center items-center text-white">
-          <h1 className="text-2xl font-bold mb-4 text-center">
+          <h1 className="text-3xl font-bold mb-4 text-center">
             Connecting you with critical care, instantly.
           </h1>
-          <p className="text-sm max-w-sm text-center opacity-90">
+          <p className="text-sm max-w-lg text-center opacity-90">
             We provide top-tier medical care during patient transfers, with a
             dedicated team of specialists and paramedics available around the
             clock. Emergency Charter Air Ambulance offers this superior service
@@ -83,7 +83,7 @@ const AmbulanceConnection = () => {
           </p>
         </div>
         <img
-          className="absolute right-0 w-[28rem] max-w-xs lg:max-w-md"
+          className="absolute -top-24 right-10 w-[34rem]  "
           src="./Home/ambulance.png"
           alt="Ambulance"
         />

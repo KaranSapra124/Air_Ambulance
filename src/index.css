@@ -15,7 +15,7 @@ color: black;
 background: none !important;
 background-color: white !important;
 border-radius: 100%;
-left: -2rem;
+/* left: -2rem; */
 }
 
 .ant-carousel > .slick-slider > .slick-next{
@@ -23,7 +23,7 @@ left: -2rem;
   background: none !important;
   background-color: white !important;
   border-radius: 100%;
-  right: 2rem;
+  /* right: 2rem; */
   }
 /* * {
   font-family: "Montserrat", sans-serif;
