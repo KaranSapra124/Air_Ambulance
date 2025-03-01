@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-primary-color {
+    background-color: #d1361b;
+  }
+
+  .text-primary-color {
+    color: #d1361b;
+  }
+}
+
+.ant-carousel > .slick-slider > .slick-prev{
+color: black;
+background: none !important;
+background-color: white !important;
+border-radius: 100%;
+left: -2rem;
+}
+
+.ant-carousel > .slick-slider > .slick-next{
+  color: black;
+  background: none !important;
+  background-color: white !important;
+  border-radius: 100%;
+  right: 2rem;
+  }
+/* * {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: ;
+  font-style: normal;
+} */
