@@ -34,7 +34,7 @@ const Services = () => {
         dots={false}
         prevArrow={<FaArrowLeft />}
         nextArrow={<FaArrowRight />}
-        slidesToShow={4}
+        slidesToShow={window.outerWidth > 768 ? 4 : 1}
         adaptiveHeight
         arrows
         infinite
