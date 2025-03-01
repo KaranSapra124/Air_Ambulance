@@ -6,17 +6,17 @@ const Hero = () => {
     <>
       <ScrollAnimation animateIn="backInRight" animateOnce duration={1.5} initiallyVisible>
         <div className="relative h-full">
-          <div className="absolute bg-black/30 h-full w-full"></div>
+          <div className="absolute bg-black/50 h-full w-full"></div>
           <img src="./Home/Hero-bg.png" alt="" />
-          <div className="absolute inset-0 flex flex-col justify-center items-center space-y-24 mt-32">
+          <div className="absolute inset-0 flex flex-col gap-2 justify-center items-center">
             <h1 className="uppercase  text-5xl font-extrabold text-white text-center">
               your health is our priority
             </h1>
-            <div className="flex flex-col items-center justify-center  gap-5">
+            <div className="flex flex-col items-center justify-center  gap-2">
               <button className="bg-white text-black rounded-full px-4 py-2 font-semibold">
                 download brochure
               </button>
-              <p className="text-white uppercase">see our services</p>
+              {/* <p className="text-white uppercase font-bold">see our services</p> */}
             </div>
           </div>
           <div className="h-1 w-8 bg-white shadow shadow-black mx-auto rotate-90"></div>
