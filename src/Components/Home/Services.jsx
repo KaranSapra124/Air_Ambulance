@@ -83,14 +83,14 @@ const Services = () => {
 
 const AmbulanceConnection = () => {
   return (
-    <div className="bg-primary-color my-6 relative flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto rounded-xl shadow-lg p-6 md:h-80">
+    <div className="bg-primary-color lg:my-6 my-2 relative flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto rounded-xl shadow-lg lg:p-6 p-2 md:h-80">
       {/* Text Content */}
       <div className="w-full flex md:w-3/5 justify-between items-center text-white text-center md:text-left px-4 md:px-8">
         <div className="flex flex-col">
-          <h1 className="text-lg md:text-xl font-bold mb-3 leading-snug">
+          <h1 className="lg:text-lg text-sm md:text-xl font-bold mb-3 leading-snug">
             Connecting you with critical care, instantly.
           </h1>
-          <p className="text-xs opacity-90 max-w-lg">
+          <p className="lg:text-xs text-[0.6rem] opacity-90 lg:max-w-lg max-w-sm">
             We provide top-tier medical care during patient transfers, with a
             dedicated team of specialists and paramedics available 24/7. Our
             Emergency Charter Air Ambulance offers this superior service at a
@@ -103,7 +103,7 @@ const AmbulanceConnection = () => {
       {/* Image */}
       <div className="w-full md:w-2/5 flex justify-center md:justify-end">
         <img
-          className="w-60 drop-shadow-lg"
+          className="lg:w-60 w-32 drop-shadow-lg"
           src="./Home/ambulance.png"
           alt="Ambulance"
         />
