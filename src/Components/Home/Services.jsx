@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../Global/Container";
 import { Carousel } from "antd";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Services = () => {
+  const [slides, setSlides] = useState(3);
   const servicesArr = [
     {
       image: "./Home/plane.png",
@@ -28,6 +29,16 @@ const Services = () => {
     },
   ];
 
+  useEffect(() => {
+    const updateSlides = () => {
+      setSlides(window.outerWidth > 768 ? 3 : 1);
+    };
+  
+    window.addEventListener("resize", updateSlides);
+    updateSlides(); // Initial call
+  
+    return () => window.removeEventListener("resize", updateSlides);
+  }, []);
   return (
     <>
       <ScrollAnimation animateIn="backInUp" duration={1.5}>
@@ -37,8 +48,8 @@ const Services = () => {
             dots={false}
             arrows
             infinite
-            className="max-w-screen-xl  mx-auto"
-            slidesToShow={window.innerWidth > 768 ? 3 : 1}
+            className="lg:max-w-screen-xl max-w-sm mx-auto"
+            slidesToShow={slides}
             adaptiveHeight
           >
             {servicesArr.map((elem, index) => (
@@ -48,7 +59,7 @@ const Services = () => {
               >
                 <img
                   src={elem.image}
-                  className="w-40 h-40 mx-auto mb-3 object-contain"
+                  className="lg:w-40 lg:h-40 w-32 h-32 mx-auto mb-3 object-contain"
                   alt={elem.title}
                 />
                 <div className="bg-yellow-200/50 lg:w-full w-fit lg:mx-0 mx-auto p-2 rounded text-center">
