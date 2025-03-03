@@ -35,31 +35,29 @@ const Services = () => {
           <Carousel
             autoplay
             dots={false}
-            prevArrow={<FaArrowLeft />}
-            nextArrow={<FaArrowRight />}
-            slidesToShow={window.outerWidth > 768 ? 4 : 1}
-            adaptiveHeight
             arrows
             infinite
-            className="max-w-screen-xl    mx-auto "
+            className="max-w-screen-xl  mx-auto"
+            slidesToShow={window.innerWidth > 768 ? 3 : 1}
+            adaptiveHeight
           >
-            {servicesArr?.map((elem, index) => (
+            {servicesArr.map((elem, index) => (
               <div
                 key={index}
-                className="bg-primary-color    p-4 rounded-xl shadow-xl hover:scale-105 transition-all cursor-pointer flex flex-col  items-center text-white border-2 border-gray-200"
+                className="bg-primary-color lg:w-full w-fit  lg:p-4 p-2 rounded-xl shadow-lg hover:scale-105 transition-all cursor-pointer flex flex-col items-center text-white border border-gray-300"
               >
                 <img
-                  src={elem?.image}
-                  className="w-52 h-52 mx-auto mb-4  object-contain"
-                  alt={elem?.title}
+                  src={elem.image}
+                  className="w-40 h-40 mx-auto mb-3 object-contain"
+                  alt={elem.title}
                 />
-                <div className="bg-yellow-200/50 p-2 rounded">
-                  <h1 className="text-sm  text-red-600  font-bold text-center mb-2">
-                    {elem?.title}
+                <div className="bg-yellow-200/50 lg:w-full w-fit lg:mx-0 mx-auto p-2 rounded text-center">
+                  <h1 className="text-sm text-red-600 font-bold mb-1">
+                    {elem.title}
                   </h1>
-                  <div className="lg:h-1 h-0.5 w-8 mx-auto bg-white rounded-full my-2"></div>
-                  <p className="text-xs max-w-52 mx-auto text-center opacity-80 leading-4 text-white font-semibold">
-                    {elem?.desc}
+                  <div className="h-1 w-8 mx-auto bg-white rounded-full my-2"></div>
+                  <p className="text-xs max-w-48 mx-auto opacity-80 font-semibold">
+                    {elem.desc}
                   </p>
                 </div>
               </div>
@@ -74,27 +72,27 @@ const Services = () => {
 
 const AmbulanceConnection = () => {
   return (
-    <div className="bg-primary-color my-2 relative flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto rounded-xl shadow-lg p-6 md:h-80 overflow-hidden">
+    <div className="bg-primary-color my-6 relative flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto rounded-xl shadow-lg p-6 md:h-80">
       {/* Text Content */}
-      <div className="w-full   flex md:w-[50rem] justify-between items-center text-white text-center md:text-left px-4 md:px-8">
+      <div className="w-full flex md:w-3/5 justify-between items-center text-white text-center md:text-left px-4 md:px-8">
         <div className="flex flex-col">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-snug">
+          <h1 className="text-lg md:text-xl font-bold mb-3 leading-snug">
             Connecting you with critical care, instantly.
           </h1>
-          <p className="text-xs text-white font-semibold opacity-90 max-w-lg">
+          <p className="text-xs opacity-90 max-w-lg">
             We provide top-tier medical care during patient transfers, with a
-            dedicated team of specialists and paramedics available around the
-            clock. Emergency Charter Air Ambulance offers this superior service
-            at a competitive cost, prioritizing your patients' well-being.
+            dedicated team of specialists and paramedics available 24/7. Our
+            Emergency Charter Air Ambulance offers this superior service at a
+            competitive cost, prioritizing patient well-being.
           </p>
         </div>
-        <div className="h-1 w-96 bg-white rounded-full rotate-90"></div>
+        <div className="h-1 w-32 bg-white rounded-full rotate-90 hidden md:block"></div>
       </div>
 
       {/* Image */}
-      <div className="absolute  w-full md:w-1/2 flex justify-center md:justify-end">
+      <div className="w-full md:w-2/5 flex justify-center md:justify-end">
         <img
-          className="relative w-[25rem] left-[33rem] -top-2.5  drop-shadow-lg"
+          className="w-60 drop-shadow-lg"
           src="./Home/ambulance.png"
           alt="Ambulance"
         />
