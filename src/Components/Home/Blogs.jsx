@@ -29,38 +29,38 @@ const Blogs = () => {
   return (
     <ScrollAnimation animateIn="fadeIn" duration={1.5} >
       <Container>
-        <h1 className="text-2xl text-center my-4 font-bold text-primary-color">
+        <h1 className="lg:text-2xl text-sm text-center lg:my-4 my-2 font-bold text-primary-color">
           Our Blogs
         </h1>
-        <div className="flex max-w-screen-xl items-center mx-auto justify-between">
+        <div className="flex max-w-screen-xl  lg:flex-row flex-col items-center mx-auto justify-between">
           {blogsData?.map((elem, index) => {
             return (
               <>
-                <div className="w-72 shadow-lg shadow-black relative h-96 rounded-4xl hover:scale-105 transition-all cursor-pointer bg-primary-color">
-                  <img className="w-full" src={elem?.image} alt="" srcset="" />
-                  <div className="bg-[#FEFFDE] flex flex-col gap-2 w-52 mx-auto top-40 p-2 rounded inset-0 absolute">
+                <div className="lg:w-72 lg:my-0 my-2 w-64 shadow-lg shadow-black relative h-96  rounded-4xl hover:scale-105 transition-all cursor-pointer bg-primary-color">
+                  <img className="lg:w-full " src={elem?.image} alt="" srcset="" />
+                  <div className="bg-[#FEFFDE] flex flex-col gap-2 lg:w-52 w-44 mx-auto top-40 p-2 rounded inset-0 absolute">
                     <div className="flex justify-between">
                       <div className="flex  items-center">
                         <FaCalendar className="text-primary-color text-xs mx-0.5" />
-                        <span className="text-xs font-semibold">
+                        <span className="lg:text-xs text-[0.6rem] font-semibold">
                           {elem?.date}
                         </span>
                       </div>
                       <div className="flex items-center">
                         <FaUser className="text-primary-color text-xs mx-0.5" />
-                        <span className="text-xs font-semibold">admin</span>
+                        <span className="lg:text-xs text-[0.6rem] font-semibold">admin</span>
                       </div>
                     </div>
                     <h1 className="text-[0.7rem] text-primary-color font-extrabold text-center">
                       {elem?.title}
                     </h1>
-                    <p className="text-xs text-center text-gray-900 font-medium">
+                    <p className="lg:text-xs text-[0.65rem] text-center text-gray-900 font-medium">
                       {elem?.desc}
                     </p>
                   </div>
                 </div>
                 {index !== blogsData.length - 1 && (
-                  <div className="h-1 w-12 bg-primary-color rounded-full rotate-90"></div>
+                  <div className="h-1 w-12 lg:block hidden bg-primary-color rounded-full rotate-90"></div>
                 )}
               </>
             );
