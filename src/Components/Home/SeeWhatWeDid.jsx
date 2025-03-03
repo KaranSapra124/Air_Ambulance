@@ -28,24 +28,24 @@ const SeeWhatWeDid = () => {
   return (
     <ScrollAnimation animateIn="backInUp" duration={1.5}>
       <Container>
-        <h1 className="font-bold text-center my-4 text-primary-color text-2xl">
+        <h1 className="font-bold text-center my-2 lg:my-4 text-primary-color text-sm lg:text-2xl">
           See What We Did
         </h1>
-        <div className="flex justify-between gap-8  mx-auto max-w-screen-xl">
+        <div className="flex lg:flex-row flex-col justify-between gap-8  mx-auto max-w-screen-xl">
           {data?.map((elem, index) => {
             return (
-              <div className="bg-primary-color shadow-md shadow-black hover:scale-105 transition-all cursor-pointer rounded-md py-9 w-full p-5 ">
+              <div className="bg-primary-color shadow-md shadow-black hover:scale-105 transition-all cursor-pointer rounded-md lg:py-9 py-3.5 w-64 lg:mx-0 mx-auto lg:w-full lg:p-5 p-3 ">
                 <img
-                  className="w-32 mb-2 mx-auto"
+                  className="lg:w-32 w-16 mb-2 mx-auto"
                   src={elem?.vector}
                   alt=""
                   srcset=""
                 />
-                <h1 className="text-4xl font-extrabold text-center text-white">
+                <h1 className="text-sm lg:text-4xl font-extrabold text-center text-white">
                   {elem?.count}
                 </h1>
-                <div className="h-1 w-12 bg-white rounded-full my-2 mx-auto"></div>
-                <h2 className="text-center  text-white  font-semibold">
+                <div className="h-1 lg:w-12 w-6 bg-white rounded-full my-2 mx-auto"></div>
+                <h2 className="lg:text-sm text-xs text-center  text-white  font-semibold">
                   {elem?.title}
                 </h2>
               </div>
