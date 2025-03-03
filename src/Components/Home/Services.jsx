@@ -63,7 +63,7 @@ const Services = () => {
                   alt={elem.title}
                 />
                 <div className="bg-yellow-200/50 lg:w-full w-fit lg:mx-0 mx-auto p-2 rounded text-center">
-                  <h1 className="text-sm text-red-600 font-bold mb-1">
+                  <h1 className="lg:text-lg text-sm text-red-600 font-bold mb-1">
                     {elem.title}
                   </h1>
                   <div className="h-1 w-8 mx-auto bg-white rounded-full my-2"></div>
@@ -87,7 +87,7 @@ const AmbulanceConnection = () => {
       {/* Text Content */}
       <div className="w-full flex md:w-3/5 justify-between items-center text-white text-center md:text-left px-4 md:px-8">
         <div className="flex flex-col">
-          <h1 className="lg:text-lg text-sm md:text-xl font-bold mb-3 leading-snug">
+          <h1 className="lg:text-4xl text-sm md:text-xl font-bold mb-3 leading-snug">
             Connecting you with critical care, instantly.
           </h1>
           <p className="lg:text-xs text-[0.6rem] opacity-90 lg:max-w-lg max-w-sm">
@@ -103,7 +103,7 @@ const AmbulanceConnection = () => {
       {/* Image */}
       <div className="w-full md:w-2/5 flex justify-center md:justify-end">
         <img
-          className="lg:w-60 w-32 drop-shadow-lg"
+          className="lg:w-full  w-32 drop-shadow-lg"
           src="./Home/ambulance.png"
           alt="Ambulance"
         />
