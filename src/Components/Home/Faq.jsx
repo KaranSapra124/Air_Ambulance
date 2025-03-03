@@ -17,14 +17,14 @@ const Faq = () => {
     <ScrollAnimation animateIn="backInLeft" duration={1.5}>
       <Container>
         <div>
-          <h1 className="text-center text-primary-color text-2xl font-bold my-4">
+          <h1 className="text-center text-primary-color lg:text-2xl text-sm font-bold my-4">
             FAQ
           </h1>
-          <div className="flex justify-between mx-auto max-w-screen-xl">
-            <div className="w-1/2 flex flex-col  gap-2">
+          <div className="flex lg:flex-row flex-col justify-between mx-auto max-w-screen-xl">
+            <div className="lg:w-1/2 w-full flex flex-col  gap-2">
               {faqData?.map((elem) => {
                 return (
-                  <details className=" p-2 rounded font-bold bg-primary-color text-white justify-between">
+                  <details className="lg:text-sm text-xs p-2 rounded font-bold bg-primary-color text-white justify-between">
                     <summary> {elem} </summary>
                     <p className="bg-white p-2 rounded my-2 text-gray-900">
                       Test Content
@@ -33,7 +33,7 @@ const Faq = () => {
                 );
               })}
             </div>
-            <div className="relative w-1/2 flex justify-center items-center">
+            <div className="relative lg:block hidden w-1/2 flex justify-center items-center">
               {/* Image 2 (Behind) */}
               <img
                 className="absolute shadow-md shadow-black w-52 top-32  left-[20rem] z-0"
