@@ -23,7 +23,7 @@ const Hero = () => {
 
           {/* Content */}
           <div className="absolute inset-0 flex flex-col lg:gap-4 gap-1 justify-center items-center text-center px-4">
-            <h1 className="uppercase text-white font-extrabold lg:text-3xl text-sm md:text-5xl">
+            <h1 className="uppercase text-white font-extrabold lg:text-5xl text-sm md:text-2xl">
               your health is our priority
             </h1>
             <button className="bg-white text-black rounded-full lg:px-6 lg:py-3 p-0.5 font-semibold lg:text-sm text-xs md:text-base">
