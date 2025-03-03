@@ -37,24 +37,24 @@ const Testimonial = () => {
     <ScrollAnimation animateIn="backInUp" duration={1.5}>
       <Container>
         <div>
-          <h1 className="text-center text-2xl text-primary-color font-bold my-4">
+          <h1 className="text-center lg:text-2xl text-sm text-primary-color font-bold my-2 lg:my-4">
             Testimonials
           </h1>
-          <div className="flex gap-8 max-w-screen-xl mx-auto">
+          <div className="flex lg:flex-row flex-col gap-8 max-w-screen-xl mx-auto">
             {testimonialData?.map((elem, index) => {
               return (
                 <div className="flex flex-col shadow-md shadow-black hover:scale-105 transition-all p-2 w-full rounded gap-4 bg-primary-color">
-                  <p className="text-white text-md font-semibold">
+                  <p className="text-white text-sm lg:text-md font-semibold">
                     "{elem?.review}"
                   </p>
                   <div className="flex mt-auto items-center">
                     <img
-                      className="w-10 h-10 shadow shadow-white rounded-full"
+                      className="lg:w-10 lg:h-10 w-8 h-8 shadow shadow-white rounded-full"
                       src={elem?.image}
                       alt=""
                       srcset=""
                     />
-                    <h2 className="text-white text-sm font-semibold mx-1">
+                    <h2 className="text-white text-xs lg:text-sm font-semibold mx-1">
                       {elem?.Name}
                     </h2>
                   </div>
