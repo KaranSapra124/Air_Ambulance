@@ -14,7 +14,7 @@ const GlobalContentContainer = ({ title, content, image }) => {
             </p>
           );
         })}
-        <img src={image} alt="" srcset="" />
+        {image && <img src={image} className="mx-auto lg:w-full lg:h-96 object-cover" alt="" srcset="" />}
       </div>
     </Container>
   );
