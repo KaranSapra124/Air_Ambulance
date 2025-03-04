@@ -7,6 +7,7 @@ import Blogs from "./pages/Blogs";
 import React from "react";
 import Navbar from "./Components/Global/Navbar";
 import Air_Ambulance from "./Components/DropDown/Air_Ambulance";
+import Train_Ambulance from "./Components/DropDown/Components/Train_Ambulane";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
       { path: "/worldwide-solutions", element: <WorldwideSolutions /> },
       { path: "/blogs", element: <Blogs /> },
       { path: "/air-ambulance", element: <Air_Ambulance /> },
+      { path: "/train-ambulance", element: <Train_Ambulance /> },
+
     ],
   },
 ]);
