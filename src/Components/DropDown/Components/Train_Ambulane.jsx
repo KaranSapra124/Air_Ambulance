@@ -1,8 +1,8 @@
 import React from "react";
 
-import Hero from "./Components/AirAmbulance/Air_Ambulance_Hero";
-import GlobalServiceContent from "../Global/GlobalServiceContent";
-import GlobalContentContainer from "../Global/GlobalContentContainer";
+// import Hero from "./Components/AirAmbulance/Air_Ambulance_Hero";
+import GlobalServiceContent from "../../Global/GlobalServiceContent";
+import GlobalContentContainer from "../../Global/GlobalContentContainer";
 import GlobalHero from "../../Global/GlobalHero";
 const Train_Ambulance = () => {
   return (
@@ -14,18 +14,22 @@ const Train_Ambulance = () => {
         title={"TRAIN AMBULANCE"}
       />{" "}
       <GlobalServiceContent
-        title={"Air Ambulance Services for Faster and Safer Care"}
+        title={"Train Ambulance for Medically Secure Transportation"}
         content={[
-          "When it comes to quick, safe and comfortable intensive care transportation services, we offer the best air ambulance services in India. We thrive to serve those who are in a need for the air ambulance in a manner that is safe, medically secure and affordable.",
+          "If you are looking for the train ambulance in India, then you have just found the perfect service provider. Our service is fabricated to carry patients to the hospitals following a phenomenon or an accident at a lesser cost than air ambulance.",
         ]}
       />
       <GlobalContentContainer
-        title={"Our ideology and approach of Air Ambulance Services:"}
+        title={"Our approach of Train Ambulance Service in India:"}
         content={[
-          "Ideology: Sometimes, some situations demand you to hire affordable air ambulance Services. Our Air ambulances are specially designed aircraft meant for relocating patients from one destination to another facility while ensuring continuous medical monitoring along the way to ensure safety.Our approach: When the time runs out and ground ambulance support system threatens the safety of the patient our air ambulance services come into the scene. When the patient is in a remote place, our service also helps the patient in getting the right care",
+          "Organized: From the booking to medical escorts, doctors, food and hygienic issues, everything is streamlined so that patents can be transported safely. We have bigger fleets equipped with comprehensive medical devices and advanced technological medical solution to offer complete care. This makes us effective train ambulance services in India that you can trust.",
+          "Quick response: We understand the fact that it is highly risky to delay the response in a life and death situation. Therefore, we have a quick response team that is ready to act immediately as soon as we get the information. We are active 24 X 7 to respond to call round the clock.",
+          "Trained staffs: We as the rusted and reputed railway ambulance in India make sure that we offer highly trained doctors, medical escorts and other staffs to streamline the whole transportation process while keeping the patients medically safe and giving comfort along the way.",
+          "Perfect service: We understand the fact that everything has to be perfect when it comes to urgent cases. Therefore, we have deployed smart digital booking system and dispatcher to make things a little faster and quicker.",
+          "We also use all the life saving and support tools and devices like oxygen, ventilator and other support systems to take care of the patients during the transition, we also have an inventory with medicines to keep our patients medically safe and secure",
         ]}
         image={
-          "https://s3-alpha-sig.figma.com/img/6afa/bc58/4968e18e6f1c7acedd06b2f3a8a6e2d3?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=pyONVYhvfohQkKWdn~NiFixfFtxmaFpgdx5Bfa02ZV1K~0vQwIN-b5xaVEWJkDx3EsWuFoQtfzgcMsJ9Vujti4XhSSCoM2CZaz~5eGIGQTGsj9Sk3V~BN3zl-PS2mP8NpSJVEsxycqxeork6nv5Ct7~zzxSyUePbFfbRzPJCqtnsbdEXW51EdIJZjMiOJ5ln9opotOY8Urk2QwKYlkGj7MX8fk-kef6qu18R06VX81Bg6H7R3qQSq4l9j1CI34w-3cI4LQSKYBKjT-4z6CPGNZUqiaooL~EDo-~SyKHvCNXKuO5vqFIEjVmtZfQlrlPwGDVzqj3e0UzwTfHfuaKGAg__"
+          "https://s3-alpha-sig.figma.com/img/88e8/3c08/8e0a3d2498d9aec4a030ce7afd0465d0?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OR7qsQEFSPp1HB4OXJpv~DKEPVt8hanPR4vky4bUeY95ZoBQae62PcgiYmqA6xMIXEZtt6tNhnZHd8UD89WLhU4ftZwWEHL5NlI6Oufs8rvUhJia2Ebna3-KpQoZp8c9C6O42DIePhoWXv2KL4drc5Zj~vJZyAX24g4QBgByEsLHJQDwupcMBTkkEDoDC-EHs8cKTckdzGLbOyVWy~fsXGZM-5ApLjMcMSM7CD1lagS-AHwJ8hxfqy3xwPCHca8Bor6CirUG-heCB47Iqr1GbPgGiky8SxaJ7yhiVyjrTSi6IUO3Uwd0YNq03fL5JInwFC52xLPMPqwnzbl4Ph-x9w__"
         }
       />
       <GlobalServiceContent
