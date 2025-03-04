@@ -4,7 +4,7 @@ import Container from "./Container";
 const GlobalServiceContent = ({ content, title }) => {
   return (
     <>
-      <div className="bg-primary-color">
+      <div className="bg-primary-color mb-2">
         <Container>
           <h1 className="lg:text-2xl text-sm text-center font-semibold text-white lg:my-4 my-2">
             {title}

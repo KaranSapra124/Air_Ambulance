@@ -19,6 +19,7 @@ const Navbar = () => {
   const servicesDropdown = [
     { title: "Air Ambulance", link: "/air-ambulance" },
     { title: "Train Ambulance", link: "/train-ambulance" },
+    { title: "Road Ambulance", link: "/road-ambulance" },
   ];
 
   return (
@@ -61,7 +62,10 @@ const Navbar = () => {
                     )}
                   </div>
                 ) : (
-                  <Link className="text-white lg:text-lg text-xs" to={elem.link}>
+                  <Link
+                    className="text-white lg:text-lg text-xs"
+                    to={elem.link}
+                  >
                     {elem.title}
                   </Link>
                 )}
@@ -101,7 +105,10 @@ const Navbar = () => {
                     )}
                   </div>
                 ) : (
-                  <Link className="text-white block lg:text-lg text-xs" to={elem.link}>
+                  <Link
+                    className="text-white block lg:text-lg text-xs"
+                    to={elem.link}
+                  >
                     {elem.title}
                   </Link>
                 )}

@@ -1,9 +1,9 @@
 import React from "react";
 
 // import Hero from "./Components/AirAmbulance/Air_Ambulance_Hero";
-import GlobalServiceContent from "../../Global/GlobalServiceContent";
-import GlobalContentContainer from "../../Global/GlobalContentContainer";
-import GlobalHero from "../../Global/GlobalHero";
+import GlobalServiceContent from "../Global/GlobalServiceContent";
+import GlobalContentContainer from "../Global/GlobalContentContainer";
+import GlobalHero from "../Global/GlobalHero";
 const Train_Ambulance = () => {
   return (
     <>
