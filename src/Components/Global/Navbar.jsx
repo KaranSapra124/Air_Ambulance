@@ -52,7 +52,7 @@ const Navbar = () => {
                           <Link
                             key={subIndex}
                             to={subItem.link}
-                            className="block px-4 py-2 text-white border-b text-center lg:text-lg text-xs hover:bg-gray-100"
+                            className="block px-4 py-2 text-white border-b text-center lg:text-lg text-xs hover:bg-red-800"
                           >
                             {subItem.title}
                           </Link>
