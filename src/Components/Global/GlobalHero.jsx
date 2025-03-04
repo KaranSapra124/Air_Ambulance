@@ -19,7 +19,7 @@ const GlobalHero = ({ image, title }) => {
             <img
               src={image}
               alt=""
-              className="lg:w-full lg:h-full  object-cover"
+              className="lg:w-full lg:h-full h-[10rem] w-full  object-cover"
             />
 
             {/* Content */}
