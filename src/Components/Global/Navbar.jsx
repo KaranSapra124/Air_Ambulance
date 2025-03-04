@@ -26,7 +26,7 @@ const Navbar = () => {
       <SubNavbar />
       {/* Navbar Container */}
       <div className="bg-primary-color p-4">
-        <div className="flex items-center justify-between">
+        <div className="flex  items-center justify-between">
           {/* Hamburger Menu for Mobile */}
           <button
             className="md:hidden text-white text-xl"
@@ -36,12 +36,12 @@ const Navbar = () => {
           </button>
 
           {/* Links for Desktop */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-6">
             {linksArr.map((elem, index) => (
               <div key={index} className="relative">
                 {elem.hasDropdown ? (
                   <div
-                    className="text-white cursor-pointer relative text-xs"
+                    className="text-white cursor-pointer relative lg:text-lg text-xs"
                     onMouseEnter={() => setIsDropdownOpen(true)}
                     onMouseLeave={() => setIsDropdownOpen(false)}
                   >
@@ -52,7 +52,7 @@ const Navbar = () => {
                           <Link
                             key={subIndex}
                             to={subItem.link}
-                            className="block px-4 py-2 text-white border-b text-center text-xs hover:bg-gray-100"
+                            className="block px-4 py-2 text-white border-b text-center lg:text-lg text-xs hover:bg-gray-100"
                           >
                             {subItem.title}
                           </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     )}
                   </div>
                 ) : (
-                  <Link className="text-white text-xs" to={elem.link}>
+                  <Link className="text-white lg:text-lg text-xs" to={elem.link}>
                     {elem.title}
                   </Link>
                 )}
@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
 
           {/* Pay Online Button */}
-          <button className="bg-white px-3 py-1.5 rounded-full text-xs">
+          <button className="bg-white px-3 py-1.5 rounded-full lg:text-lg text-xs">
             Pay Online
           </button>
         </div>
@@ -92,7 +92,7 @@ const Navbar = () => {
                           <Link
                             key={subIndex}
                             to={subItem.link}
-                            className="block px-4 py-2 text-white border-b text-center text-xs hover:bg-gray-100"
+                            className="block px-4 py-2 text-white border-b text-center  text-xs hover:bg-gray-100"
                           >
                             {subItem.title}
                           </Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
                     )}
                   </div>
                 ) : (
-                  <Link className="text-white block text-xs" to={elem.link}>
+                  <Link className="text-white block lg:text-lg text-xs" to={elem.link}>
                     {elem.title}
                   </Link>
                 )}

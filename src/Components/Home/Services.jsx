@@ -55,7 +55,7 @@ const Services = () => {
             {servicesArr.map((elem, index) => (
               <div
                 key={index}
-                className="bg-primary-color lg:w-full w-fit  lg:p-4 p-2 rounded-xl shadow-lg hover:scale-105 transition-all cursor-pointer flex flex-col items-center text-white border border-gray-300"
+                className="bg-primary-color lg:w-full   lg:p-4 p-2 rounded-xl shadow-lg hover:scale-105 transition-all cursor-pointer flex flex-col items-center text-white border border-gray-300"
               >
                 <img
                   src={elem.image}
