@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../Global/Container";
+import Contact from "../Home/Contact"
 import WhatWeDid from "../Home/SeeWhatWeDid";
 
 const AboutUsData = () => {
@@ -39,7 +40,8 @@ const AboutUsData = () => {
           </div>
         </div>
       </Container>
-        <WhatWeDid />
+      <WhatWeDid />
+      <Contact />
     </>
   );
 };
