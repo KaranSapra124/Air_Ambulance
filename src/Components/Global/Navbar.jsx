@@ -17,8 +17,8 @@ const Navbar = () => {
   ];
 
   const servicesDropdown = [
-    { title: "Air Ambulance", link: "/services/air-ambulance" },
-    { title: "Train Ambulance", link: "/services/train-ambulance" },
+    { title: "Air Ambulance", link: "/air-ambulance" },
+    { title: "Train Ambulance", link: "/train-ambulance" },
   ];
 
   return (
