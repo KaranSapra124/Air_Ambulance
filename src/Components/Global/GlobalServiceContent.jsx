@@ -12,7 +12,7 @@ const GlobalServiceContent = ({ content, title }) => {
           <div>
             {content?.map((elem, index) => {
               return (
-                <p className="text-center lg:font-normal font-semibold text-[0.6rem] lg:text-sm text-white">
+                <p className="text-center my-1.5 lg:font-normal font-semibold text-[0.6rem] lg:text-sm text-white">
                   {elem}
                 </p>
               );

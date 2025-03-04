@@ -33,12 +33,14 @@ const Train_Ambulance = () => {
         }
       />
       <GlobalServiceContent
-        title={"A glimpse into our Air Charter ambulance service:"}
+        title={"Benefits of our Train Ambulance service:"}
         content={[
-          "International charter:We have flight nurses and doctors with visas to accompany patients to almost all the parts of the globe. We have medical escorts also for medical assistance. We as the best international air ambulance services have all life support devices that include oxygen and advanced life support system.Commercial flightsMedical escorts and nurses are available for stretcher cases for serious illness. We offer these services both for domestic and international air charter service.",
+          "👉 Patients will travels in a stress-free environment. All the patients who are transported by rail are escorted by trained medical professionals.",
+          "👉 It is less expensive than air ambulance service and long distance ground transportation. Since we are dependent on Indian railway schedules and seat availability, we need 24-48 hours for activation for AC rail ambulance.",
+          "👉 If you have been looking formedical escort service via rail, then you should consider us and we would love to give you our service.",
         ]}
       />
-      <GlobalContentContainer
+      {/* <GlobalContentContainer
         title={"Book Domestic charter"}
         content={[
           "Our domestic service is available with advanced life support system like ventilators, incubators and another support system to ensure complete safety.Why should you choose us?",
@@ -47,7 +49,7 @@ const Train_Ambulance = () => {
           "👉 We have smart computerized dispatch system to streamline the booking process If you have been looking for air ambulance Services in India cost, then you should look at our cost and we guarantee you that we can give you the best price, we thrive to serve our clients with a sense of urgency. We love life and for that reason, we act mindfully and intelligently. Call us now if you have an emergency case",
         ]}
         image={null}
-      />
+      /> */}
     </>
   );
 };
