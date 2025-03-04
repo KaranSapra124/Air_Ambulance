@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import AboutUsData from "../Components/AboutUs/AboutUsData";
 
 const AboutUs = () => {
   return (
-    <div>Aboutus</div>
-  )
-}
+    <>
+     <AboutUsData/>
+    </>
+  );
+};
 
-export default AboutUs
+export default AboutUs;
