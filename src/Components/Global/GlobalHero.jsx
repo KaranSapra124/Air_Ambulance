@@ -33,7 +33,7 @@ const GlobalHero = ({ image, title }) => {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="h-1 lg:w-8 w-4 bg-white shadow shadow-black mx-auto rotate-90 lg:mt-0 -mt-1"></div>
+            {/* <div className="h-1 lg:w-8 w-4 bg-white shadow shadow-black mx-auto rotate-90 lg:mt-0 -mt-1"></div> */}
           </div>
         </ScrollAnimation>
    
