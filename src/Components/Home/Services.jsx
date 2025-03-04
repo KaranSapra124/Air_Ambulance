@@ -33,10 +33,10 @@ const Services = () => {
     const updateSlides = () => {
       setSlides(window.outerWidth > 768 ? 3 : 1);
     };
-  
+
     window.addEventListener("resize", updateSlides);
     updateSlides(); // Initial call
-  
+
     return () => window.removeEventListener("resize", updateSlides);
   }, []);
   return (
@@ -74,8 +74,10 @@ const Services = () => {
               </div>
             ))}
           </Carousel>
-          <AmbulanceConnection />
         </Container>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" duration={1.5}>
+        <AmbulanceConnection />
       </ScrollAnimation>
     </>
   );
