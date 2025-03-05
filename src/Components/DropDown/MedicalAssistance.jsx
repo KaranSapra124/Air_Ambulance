@@ -25,14 +25,18 @@ const MedicalAssistance = () => {
           "Our onsite medical services also include servicing medical care in outdoor and indoor events, during religious meet, festivals and more. You can outsource or medical services 24 x 7. All our ambulances are best equipped with airway management, oxygen machines, trauma medication, suction, and other tools required for emergency medical care.",
         ]}
       />
-      <GlobalContentContainer
+    <div className="-mt-16">
+    <GlobalContentContainer
         title={"Medical care even in remote areas"}
         content={[
           "Our expert staff members include nurses, physicians, assistants, and other members to form a qualified and certified team. Basically, our sports medical services can be offered at any place. This falls in the category of on-site medical service and it is commonly found in the remote areas. DHHR, promises high-end service from experienced and qualified medical staff. You can call us as the most sought service provider of medical care and treatment. We can assure you of quality rated services, which you will never find anywhere else.",
-        ]
-    }
-    image={'https://s3-alpha-sig.figma.com/img/35e1/5a2c/448b94d11234b0b649c0b579a6500c4a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cXeCdpeVaaYqccGyhrhZ3KAv3olIo4GRM-D8E472JLDfz-PyGZmqTYiyrRjYe-WdGEW-Hu3uD~UItkQHuvI~vKeJrvkfTX9FUSGoFtABQT5ppWYMNNUH-20IAxH~uY-10hJTAsnoAa8CWMZ4Of6MjKPA~gDjLefZ71gVUb-2dTpAktmeB4oBadjZWRmTlb6qIcpB1tE9FirqxWlSPdSyGvO2X49KAgNcnMPUBooDMZozRQobCdgj5aBSKliIwAH9uTSDOLZcrN2w9kv5R6H0E~wuMSjLIWP6Lib80TSWoD2DeReZvgzTvM9kSftF65Mq56z5Ass43U3uEL6wI9mGbw__'}
+        ]}
+        image={
+          "https://s3-alpha-sig.figma.com/img/35e1/5a2c/448b94d11234b0b649c0b579a6500c4a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cXeCdpeVaaYqccGyhrhZ3KAv3olIo4GRM-D8E472JLDfz-PyGZmqTYiyrRjYe-WdGEW-Hu3uD~UItkQHuvI~vKeJrvkfTX9FUSGoFtABQT5ppWYMNNUH-20IAxH~uY-10hJTAsnoAa8CWMZ4Of6MjKPA~gDjLefZ71gVUb-2dTpAktmeB4oBadjZWRmTlb6qIcpB1tE9FirqxWlSPdSyGvO2X49KAgNcnMPUBooDMZozRQobCdgj5aBSKliIwAH9uTSDOLZcrN2w9kv5R6H0E~wuMSjLIWP6Lib80TSWoD2DeReZvgzTvM9kSftF65Mq56z5Ass43U3uEL6wI9mGbw__"
+        }
       />
+    </div>
+      <GlobalServiceContent title={'24 x 7 emergency care services'} content={['We are also known for offering expert medical care to many of the MNCs in different segments. This includes event sectors, exhibitions, sports and many others. The top-notch medical care services can be easily outsourced from us. We offer comprehensive packages to all these companies and offer quality medical support on time.','No matter, whether you are in need of a medical care in a village, or during any big events or exhibition, our exhibition medical services can come to your rescue and can provide professional medical care in the best possible way. Here, we make sure that all your medical care needs get fulfilled on time and within the budget.','Call us today for fulfilling all your emergency medical needs anywhere and anytime.']}/>
     </>
   );
 };
