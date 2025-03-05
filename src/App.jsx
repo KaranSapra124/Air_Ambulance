@@ -9,6 +9,7 @@ import Navbar from "./Components/Global/Navbar";
 import Air_Ambulance from "./Components/DropDown/Air_Ambulance";
 import Train_Ambulance from "./Components/DropDown/Train_Ambulane";
 import Ambulance from "./Components/DropDown/Ambulance";
+import MedicalAssistance from "./Components/DropDown/MedicalAssistance";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "/air-ambulance", element: <Air_Ambulance /> },
       { path: "/train-ambulance", element: <Train_Ambulance /> },
       { path: "/road-ambulance", element: <Ambulance /> },
+      {path:"/medical-assistance",element:<MedicalAssistance/>}
     ],
   },
 ]);
