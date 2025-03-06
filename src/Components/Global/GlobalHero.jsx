@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 // https://s3-alpha-sig.figma.com/img/0e91/0ee5/021902518f91ef73f152bd16180389be?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=bfh0xVBmx5OtE5K8jrl~wXZzJGRmW~HLEb4KcoAj2-6ANUeXH~1RiAM3Yoojnm0SugCc2ES69bJyRwsFSC2a2mYMS0YyzZOzhH5QuYUPexoOGowsTLh8qcyt5oskQW484haeYMNqV7uR1bjFroJwiFO9KQcBtIvfGJSicEkA9zeHoZy3z5fdaww~2EBlJVdlxhp07kpaJGGVBmcLdlIPJGwd68LDyLQfyGNPL5b9eL~hQ69L-MHOgCIQxYUuY5dpy0pee0FJo8WwLdEevpCa6Jc~-40a5~lpgt9FGhHvzrOzbziqnZqAoRltbwx8yTacm7tecspEtckdifnUtGYB~Q__
-const GlobalHero = ({ image, title }) => {
+const GlobalHero = ({ image, title , bgColor}) => {
   return (
     <>
     
@@ -13,7 +13,7 @@ const GlobalHero = ({ image, title }) => {
         >
           <div className="relative lg:h-screen h-full w-full">
             {/* Overlay */}
-            <div className="absolute w-full inset-0 bg-black/50"></div>
+            <div className={`${bgColor ? `absolute w-full inset-0 ${bgColor}`:"absolute w-full inset-0 bg-black/50"}`}></div>
 
             {/* Background Image */}
             <img
