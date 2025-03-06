@@ -11,6 +11,7 @@ import Train_Ambulance from "./Components/DropDown/Train_Ambulane";
 import Ambulance from "./Components/DropDown/Ambulance";
 import MedicalAssistance from "./Components/DropDown/MedicalAssistance";
 import Stretcher from "./Components/DropDown/Stretcher";
+import Emergency from "./Components/DropDown/Emergency";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       { path: "/road-ambulance", element: <Ambulance /> },
       { path: "/medical-assistance", element: <MedicalAssistance /> },
       { path: "/stretcher", element: <Stretcher /> },
+      {path:"/emergency",element:<Emergency/>}
     ],
   },
 ]);

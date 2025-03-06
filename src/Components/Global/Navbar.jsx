@@ -22,6 +22,7 @@ const Navbar = () => {
     { title: "Road Ambulance", link: "/road-ambulance" },
     { title: "Medical Assistance", link: "/medical-assistance" },
     { title: "Stretcher Assistance", link: "/stretcher" },
+    { title: "Emergency Ambulance", link: "/emergency" },
   ];
 
   return (
