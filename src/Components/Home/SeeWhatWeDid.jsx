@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../Global/Container";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Carousel } from "antd";
 
 const SeeWhatWeDid = () => {
   const data = [
@@ -31,10 +32,10 @@ const SeeWhatWeDid = () => {
         <h1 className="font-bold text-center my-2 lg:my-4 text-primary-color text-sm lg:text-2xl">
           See What We Did
         </h1>
-        <div className="flex lg:flex-row flex-col justify-between gap-8  mx-auto max-w-screen-xl">
+        <Carousel slidesToShow={3} className="flex space-x-2 lg:flex-row flex-col justify-between   mx-auto max-w-screen-xl">
           {data?.map((elem, index) => {
             return (
-              <div className="bg-primary-color shadow-md shadow-black hover:scale-105 transition-all cursor-pointer rounded-md lg:py-9 py-3.5 w-64 lg:mx-0 mx-auto lg:w-full lg:p-5 p-3 ">
+              <div className="bg-primary-color h-80   shadow-md shadow-black hover:scale-105 transition-all cursor-pointer rounded-md lg:py-9 py-3.5  lg:mx-0   mx-auto lg:w-full lg:p-5 p-3 ">
                 <img
                   className="lg:w-32 w-16 mb-2 mx-auto"
                   src={elem?.vector}
@@ -51,7 +52,7 @@ const SeeWhatWeDid = () => {
               </div>
             );
           })}
-        </div>
+        </Carousel>
       </Container>
     </ScrollAnimation>
   );
