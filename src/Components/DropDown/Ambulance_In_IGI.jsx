@@ -49,7 +49,7 @@ const Ambulance_In_IGI = () => {
           "DHHR squad comprises surgeons and paramedics with a long tradition of treating adverse medical conditions. It consists of a cardiologist, neurologist, researcher, orthopedic, specialist for emergency care, respectively.",
         ]}
       />
-      <div className="-mt-16">
+      <div className="lg:-mt-16 -mt-12">
         <GlobalContentContainer
           title={"How does this service work?"}
           content={[
