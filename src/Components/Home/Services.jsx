@@ -76,7 +76,7 @@ const Services = () => {
           </Carousel>
         </Container>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn" duration={1.5}>
+      <ScrollAnimation  animateIn="fadeIn" duration={1.5}>
         <AmbulanceConnection />
       </ScrollAnimation>
     </>
@@ -85,10 +85,10 @@ const Services = () => {
 
 const AmbulanceConnection = () => {
   return (
-    <div className="bg-primary-color lg:my-6 my-2 relative flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto rounded-xl shadow-lg lg:p-6 p-2 md:h-80">
+    <div className="bg-primary-color w-fit lg:my-6 my-2 relative lg:max-w-screen-xl  flex flex-col md:flex-row items-center justify-between  mx-auto rounded-xl shadow-lg lg:p-6 p-2 md:h-80">
       {/* Text Content */}
       <div className="w-full flex md:w-3/5 justify-between items-center text-white text-center md:text-left px-4 md:px-8">
-        <div className="flex flex-col">
+        <div className="flex lg:w-full w-64 mx-auto flex-col">
           <h1 className="lg:text-4xl text-sm md:text-xl font-bold mb-3 leading-snug">
             Connecting you with critical care, instantly.
           </h1>
@@ -103,7 +103,7 @@ const AmbulanceConnection = () => {
       </div>
 
       {/* Image */}
-      <div className="w-full md:w-2/5 flex justify-center md:justify-end">
+      <div className="  md:w-2/5 flex justify-center md:justify-end">
         <img
           className="lg:w-full  w-32 drop-shadow-lg"
           src="./Home/ambulance.png"
