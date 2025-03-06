@@ -11,7 +11,7 @@ const GlobalContentContainer = ({ title, content, image }) => {
           </h1>
           {content?.map((elem, index) => {
             return (
-              <p className="text-primary-color lg:my-4 my-2 font-semibold text-center lg:text-sm text-[0.6rem] ">
+              <p className="text-primary-color lg:my-4 my-1 font-semibold text-center lg:text-sm text-[0.6rem] ">
                 {elem}
               </p>
             );
