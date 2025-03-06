@@ -37,6 +37,7 @@ const Emergency = () => {
           ]}
         />
       </div>
+      <GlobalServiceContent title={'Our Emergency Air Ambulance service at a glance:'} content={['👉Ambulances are equipped with highly advanced tools and manned by qualified personnel','👉International, domestic and charter air ambulance service across the nation and globe as part','👉International, domestic and charter air ambulance service across the nation and globe as part emergency air ambulance services','👉Quick rail ambulance with a life support system and medical escorts to transport the patients','👉Communication system between the main control room, ambulances and the emergency facilities like clinics and hospitals for seamless coordination','👉We also have emergency rooms in the hospitals, which are part of our network','👉Highly functional medical protocols across the system to ensure greater security and safer mobility','👉Training offered to doctors and escorts for pre-hospital ad in hospital care on our train medical transportation','👉Our ambulances are equipped with E. C. G., Pulse Oximeters, Oxygen, Emergency Medicines and Resuscitation kit, Nebulizer, Syringe Pump, Bipap, Pace Maker and Spine Board. Cardiac Monitor, Defibrillator, Portable Ventilator, Suction machine and much more and this makes us the most reputed and trusted emergency medical assistance']}/>
     </>
   );
 };
