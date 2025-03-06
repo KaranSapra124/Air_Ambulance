@@ -46,6 +46,8 @@ const SeeWhatWeDid = () => {
         </h1>
         <Carousel
           slidesToShow={slides}
+          autoplay
+          autoplaySpeed={1500}
           className="flex space-x-2 lg:flex-row flex-col justify-between  items-center mx-auto max-w-screen-xl"
         >
           {data?.map((elem, index) => {
