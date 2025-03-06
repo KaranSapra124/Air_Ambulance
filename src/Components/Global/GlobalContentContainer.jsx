@@ -6,7 +6,7 @@ const GlobalContentContainer = ({ title, content, image }) => {
     <Container>
       <ScrollAnimation animateIn="backInUp" animateOnce>
         <div>
-          <h1 className="text-primary-color my-2 text-center lg:text-2xl text-sm font-bold">
+          <h1 className="text-primary-color my-2 text-center lg:text-2xl text-[0.7rem] font-bold">
             {title}
           </h1>
           {content?.map((elem, index) => {
