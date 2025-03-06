@@ -8,9 +8,10 @@ const GlobalServiceContent = ({ content, title }) => {
       <div className="bg-primary-color mb-2">
         <Container>
           <ScrollAnimation animateIn="fadeIn" animateOnce>
-            <h1 className="lg:text-2xl text-sm text-center font-semibold text-white lg:my-4 my-2">
+            <h1 className="lg:text-2xl text-[0.7rem] text-center font-semibold text-white lg:my-4 my-2">
               {title}
             </h1>
+            <div className="w-10 h-0.5 lg:h-1  bg-white rounded-full mx-auto my-1"></div>
             <div>
               {content?.map((elem, index) => {
                 return (
