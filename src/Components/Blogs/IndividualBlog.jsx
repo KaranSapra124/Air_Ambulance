@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Container from "../Global/Container";
 import GlobalHero from "../Global/GlobalHero";
 import { FaCalendar, FaTags, FaUser } from "react-icons/fa6";
+import GlobalBlogs from "../Global/GlobalBlogs";
 
 const IndividualBlog = () => {
   const location = useLocation();
@@ -12,7 +13,7 @@ const IndividualBlog = () => {
     <>
       <GlobalHero image={image} />
       <Container>
-        <div className="lg:max-w-screen-lg max-w-screen-sm mx-auto">
+        <div className="lg:max-w-screen-lg  max-w-screen-sm mx-auto">
           <h1 className="text-primary-color lg:text-xl text-sm text-center font-bold">
             {title}
           </h1>
@@ -30,7 +31,16 @@ const IndividualBlog = () => {
               Air Ambulance Cost, air ambulance services
             </div>
           </div>
-          <p className="text-primary-color text-sm text-center font-medium">{desc}</p>
+          <p className="text-primary-color lg:my-4 my-2 text-sm text-center font-medium">
+            {desc}
+          </p>
+          <img
+            src={image2}
+            className="lg:my-4 my-2 mx-auto w-full"
+            alt=""
+            srcset=""
+          />
+          <GlobalBlogs blogData={arr} />
         </div>
       </Container>
     </>
