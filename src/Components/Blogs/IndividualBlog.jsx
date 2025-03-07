@@ -11,9 +11,7 @@ const IndividualBlog = () => {
   const { id } = useParams();
   const [index, setIndex] = useState(Number(id) || 0);
   const state = location?.state || { title: "", image: "", image2: "", date: "", arr: [], desc: "", points: [] };
-//   console.log(state)
-
-  // Ensure index stays within bounds
+  
   useEffect(() => {
     if (index < 0) setIndex(0);
     if (index >= state?.length) setIndex(state?.length - 1);
