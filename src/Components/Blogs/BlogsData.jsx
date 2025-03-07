@@ -3,8 +3,10 @@ import Container from "../Global/Container";
 import { FaCalendar, FaUser } from "react-icons/fa6";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Carousel } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const BlogsData = ({ isHeading }) => {
+  const navigate = useNavigate();
   const [slides, setSlides] = useState(3);
   const blogsData = [
     {
@@ -51,6 +53,11 @@ const BlogsData = ({ isHeading }) => {
       desc: "Over the past two decades, the health infrastructure of India has developed substantially. Whether it is normal health checkups or critical care, treatment in Indian is very low. However, the quality of the treatment is comparable to European countries......",
     },
   ];
+  const handleOpenBlog = (item, index) => {
+    navigate(`/Blog/${item?.title}/${index}`, {
+      state: item,
+    });
+  };
 
   useEffect(() => {
     const updateSlides = () => {
@@ -82,7 +89,7 @@ const BlogsData = ({ isHeading }) => {
             return (
               <>
                 <div
-                  onClick={() => handleOpenBlog(elem)}
+                  onClick={() => handleOpenBlog(elem, index)}
                   className="lg:w-72 lg:my-2  w-64  mx-auto shadow-lg shadow-black relative h-96  rounded-4xl hover:scale-105 transition-all cursor-pointer bg-primary-color"
                 >
                   <img

@@ -13,6 +13,7 @@ import MedicalAssistance from "./Components/DropDown/MedicalAssistance";
 import Stretcher from "./Components/DropDown/Stretcher";
 import Emergency from "./Components/DropDown/Emergency";
 import Ambulance_In_IGI from "./Components/DropDown/Ambulance_In_IGI";
+import IndividualBlog from "./Components/Blogs/IndividualBlog";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       { path: "/stretcher", element: <Stretcher /> },
       { path: "/emergency", element: <Emergency /> },
       { path: "/ambulance-igi", element: <Ambulance_In_IGI /> },
+      { path: "/blog/:title/:id", element: <IndividualBlog /> },
     ],
   },
 ]);
