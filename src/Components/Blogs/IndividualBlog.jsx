@@ -39,7 +39,7 @@ const IndividualBlog = () => {
             {title?.includes(
               "What Benefits You Get When Using Air Ambulance Services In-Emergency?"
             ) && (
-              <ul className="lg:-mt-2 -mt-7">
+              <ul className="lg:-mt-2 ">
                 {points?.map((point, index) => {
                   return (
                     <li className="text-primary-color  lg:my-4 my-2 lg:text-sm text-[0.64rem]  text-center font-bold">
