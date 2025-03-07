@@ -4,7 +4,7 @@ import { FaCalendar, FaUser } from "react-icons/fa6";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Carousel } from "antd";
 
-const BlogsData = () => {
+const BlogsData = ({isHeading}) => {
     const [slides,setSlides] = useState(3)
   const blogsData = [
     {
@@ -48,9 +48,9 @@ const BlogsData = () => {
   return (
     <ScrollAnimation animateIn="fadeIn" duration={1.5}>
       <Container>
-        <h1 className="lg:text-2xl text-sm text-center lg:my-4 my-2 font-bold text-primary-color">
+      {isHeading &&  <h1 className="lg:text-2xl text-sm text-center lg:my-4 my-2 font-bold text-primary-color">
           Our Blogs
-        </h1>
+        </h1>}
         <Carousel autoplay autoplaySpeed={1500} slidesToShow={slides} infinite loop className="flex justify-between  mx-auto">
           {blogsData?.map((elem, index) => {
             return (
