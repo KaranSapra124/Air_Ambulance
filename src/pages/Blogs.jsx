@@ -3,6 +3,7 @@ import GlobalHero from "../Components/Global/GlobalHero";
 import Banner from "../Components/Home/Banner";
 import Contact from "../Components/Home/Contact";
 import BlogsData from "../Components/Blogs/BlogsData";
+import Paagination from "../Components/Blogs/Paagination";
 
 const BlogsPage = () => {
   return (
@@ -16,7 +17,8 @@ const BlogsPage = () => {
       />
       <BlogsData isHeading={true} />
       <Banner />
-      <BlogsData/>
+      <BlogsData />
+      <Paagination />
       <Contact />
     </>
   );
