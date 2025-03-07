@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       { path: "/stretcher", element: <Stretcher /> },
       { path: "/emergency", element: <Emergency /> },
       { path: "/ambulance-igi", element: <Ambulance_In_IGI /> },
-      { path: "/blog/:title/:id", element: <IndividualBlog /> },
+      { path: "/Blog-Page", element: <IndividualBlog /> },
     ],
   },
 ]);

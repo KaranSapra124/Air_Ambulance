@@ -41,9 +41,32 @@ const BlogsData = ({ isHeading }) => {
     {
       title:
         "What Benefits You Get When Using Air Ambulance Services In-Emergency?",
-      image: "./Home/Blog-2.png",
-      date: "May 20, 2021",
-      desc: "Medical emergencies may take place within an instance of time. You may meet an accident when driving on the road. You might have fallen accidentally. In any case, you need to be rushed to the best hospital nearby. You can always.....",
+      image:
+        "https://s3-alpha-sig.figma.com/img/9fcf/3e79/1a2734e7457497fdff1a438016dd85fd?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=baydOODNJPCuZOu6JKLuS7DK2Iz~VYjcD62nRcIYGbJqYt~PedxIfrkkvfRZ6uOV7Yd5YT9dYVanOGBiZai~YUMTQGP9I8ZlDPiRKyihYRuzmT1h61ltuyV2ex0b5OSZO3FZd-wmfM4cApCuqaohzhwk-kWsvPY2IH9962oKWEDODlaNF96ZRahC9UAJjUx55If1SPbOIj7tZyEqkxI~kcMayjtIM2hoZfo5OrmECefcRmQgUsCWSnRRQj~ghPMs1Rjute-DsJXvtnbDsbZSioGt5tW3LVuqBbOKRTgCLxvTiJPjs3kkOvMy3PePV1RstDt9ybxIcHBUHif1Dxr4LA__",
+
+      date: "May 30, 2021",
+      desc: "Medical emergencies may take place within an instance of time. You may meet an accident when driving on the road. You might have fallen accidentally. In any case, you need to be rushed to the best hospital nearby.You can always reach out for ambulance services that operate 24×7. But what if the traffic conditions are not good in your area? The ambulance may not be able to arrive on time.You can always check with the best Air Ambulance Price online before hiring. These services are maybe a little more expensive.Always ensure you only hire the best team from DHHR. They offer convenience to book services online as well.There are major benefits that you may get when hiring these services in case of emergency. Some better benefits are listed here below.",
+      image2:
+        "https://s3-alpha-sig.figma.com/img/babb/0096/75898b8ba75b1b3221eac0642efc4a2d?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IKJP0AuEe4-ql24DrSxmlt8rSmOotRMx-l-KjAQMetFVRAAdW73Z3YPxIKx5MHN~TJ4M-wr-NNiH4nw4CIRoXDDVJssCvzMasp63cxzbYvQhXkEoRibwYPkRzpBiig2S3FJbagjvgFkCASbfzIvIfiUBtxzaJi-rMyidxo57~~9DFRzEs~hCuRcTNeM1ZLswHFZCwahFQ7dhIieysu0YJZbCCEIDlFMclHeSKctXW2MFN1SH59g9JtyNbQnm3l-2XIpYpPNTpyttrm5DK~3hMCt5EYa6BTQJ0mB4EGKZLrZiKLqcTjy4NuwTZpfq3L9vvh1HLvkLvj~CSv42IBIntA__",
+      arr: [
+        {
+          title: "The services are available everywhere",
+          desc: "Air ambulance services will operate in any geographical region. So you can hire them even in a most remote village. This is one of the most important benefits you get when hiring these services. Road ambulance may have their limitations.Air ambulance does not have many limitations. As long as the weather is clear, you will be able to hire these services at your convenience. You just have to book them to use them.",
+        },
+        {
+          title: "Ideal for emergency patients",
+          desc: "You just had an operation completed successfully. You may want to be rushed to the second hospital service. Your loved one may need an organ transplant. During the accident, you just had a broken limb and need immediate medical attention.These are all emergencies like situations. This is the best time when you should book services. For patients who need immediate medical assistance can best benefit from these services.",
+        },
+        {
+          title: "Time-saving options",
+          desc: "Medical emergencies may not have any time restrictions. If it happens, you may not want to wait for a longer time. It can happen as an accident or as a natural disaster. This is why you should hire the best service like DHHR.The services will act immediately as you book them. They will reach in no time and carry the patient to the medical facility. The services will always save a lot of your time.",
+        },
+      ],
+      points: [
+        "You need to hire the best air ambulance services",
+        "You can check with these services in local hospitals",
+        "You can also hire them online",
+      ],
     },
     {
       title: "How Diligently DHHR Rescue Air Ambulance Service Saves Lives",
@@ -59,7 +82,7 @@ const BlogsData = ({ isHeading }) => {
     },
   ];
   const handleOpenBlog = (item, index) => {
-    navigate(`/Blog/${item?.title}/${index}`, {
+    navigate(`/Blog-Page`, {
       state: item,
     });
   };
@@ -98,7 +121,7 @@ const BlogsData = ({ isHeading }) => {
                   className="lg:w-72 lg:my-2  w-64  mx-auto shadow-lg shadow-black relative h-96  rounded-4xl hover:scale-105 transition-all cursor-pointer bg-primary-color"
                 >
                   <img
-                    className="lg:w-full "
+                    className="lg:w-full h-52 rounded-4xl"
                     src={elem?.image}
                     alt=""
                     srcset=""
