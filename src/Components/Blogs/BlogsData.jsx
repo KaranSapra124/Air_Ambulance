@@ -82,8 +82,8 @@ const BlogsData = ({ isHeading }) => {
     },
   ];
   const handleOpenBlog = (item, index) => {
-    navigate(`/Blog-Page`, {
-      state: item,
+    navigate(`/Blog-Page/${index}`, {
+      state: blogsData,
     });
   };
 

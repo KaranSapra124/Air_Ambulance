@@ -4,7 +4,7 @@ import Container from "../Global/Container";
 const GlobalBlogs = ({ blogData }) => {
   return (
     <>
-      <Container>
+      {/* <Container> */}
         <div>
           {blogData?.map((elem, index) => {
             return (
@@ -17,7 +17,7 @@ const GlobalBlogs = ({ blogData }) => {
             );
           })}
         </div>
-      </Container>
+      {/* </Container> */}
     </>
   );
 };
