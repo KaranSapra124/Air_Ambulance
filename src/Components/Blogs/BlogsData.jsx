@@ -74,12 +74,7 @@ const BlogsData = ({ isHeading }) => {
       date: "May 14, 2021",
       desc: "Over the past two decades, the health infrastructure of India has developed substantially. Whether it is normal health checkups or critical care, treatment in Indian is very low. However, the quality of the treatment is comparable to European countries......",
     },
-    {
-      title: "How Diligently DHHR Rescue Air Ambulance Service Saves Lives",
-      image: "./Home/Blog-3.png",
-      date: "May 14, 2021",
-      desc: "Over the past two decades, the health infrastructure of India has developed substantially. Whether it is normal health checkups or critical care, treatment in Indian is very low. However, the quality of the treatment is comparable to European countries......",
-    },
+   
   ];
   const handleOpenBlog = (item, index) => {
     navigate(`/Blog-Page/${index}`, {
