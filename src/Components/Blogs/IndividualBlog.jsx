@@ -8,7 +8,7 @@ import GlobalBlogs from "../Global/GlobalBlogs";
 const IndividualBlog = () => {
   const location = useLocation();
   const { state } = location;
-  const { title, image, image2, date, arr, desc } = state;
+  const { title, image, image2, date, arr, desc, points } = state;
   return (
     <>
       <GlobalHero image={image} />
@@ -41,6 +41,21 @@ const IndividualBlog = () => {
             srcset=""
           />
           <GlobalBlogs blogData={arr} />
+          <ul className="lg:-mt-10 -mt-7">
+            {points?.map((point, index) => {
+              return (
+                <li className="text-primary-color list-decimal lg:my-4 my-2 text-sm text-center font-bold">
+                  {point}
+                </li>
+              );
+            })}
+          </ul>
+          <h2 className="text-primary-color list-decimal lg:my-6  my-2 lg:text-md text-sm text-center font-medium italic">
+            If you have been looking for the Air Ambulance Cost, then you might
+            have to look at the listed service offered by DHHR  because they are
+            specialist and have been doing a great job for a long time in
+            helping patients, talk to them now.
+          </h2>
         </div>
       </Container>
     </>

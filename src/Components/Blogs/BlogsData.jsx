@@ -29,8 +29,13 @@ const BlogsData = ({ isHeading }) => {
         },
         {
           title: "Find a good ambulance provider:",
-          desc: "You have to make sure that you are getting the right ambulance service provider, which would mean that you have to look for one and you can get the best ambulance orders on the web or through references, you should make sure that you verify how good they are and that you can do by having a  look at the customer testimonials.However, there are many other factors that you must look at before picking a service provider for your ambulance and medical emergency needs and here are those points that you must consider.👉 You have to find an ambulance service provider that has smart dispatching systems, they should be able to send the ambulance and arrange them for you as quickly as possible.👉 You have to find out how good they are in terms of transportation and how good their network is, a good service provider will have strong network through which you can get better medical facility quickly.👉 They should and must have good tools, medical devices, and smart paramedics because the thing would aid to your safety of transportation.If you have been looking for the Air Ambulance Cost, then you might have to look at the listed service offered by DHHR  because they are specialist and have been doing a great job for a long time in helping patients, talk to them now.",
+          desc: "You have to make sure that you are getting the right ambulance service provider, which would mean that you have to look for one and you can get the best ambulance orders on the web or through references, you should make sure that you verify how good they are and that you can do by having a  look at the customer testimonials.However, there are many other factors that you must look at before picking a service provider for your ambulance and medical emergency needs and here are those points that you must consider.",
         },
+      ],
+      points: [
+        "You have to find an ambulance service provider that has smart dispatching systems, they should be able to send the ambulance and arrange them for you as quickly as possible",
+        "You have to find out how good they are in terms of transportation and how good their network is, a good service provider will have strong network through which you can get better medical facility quickly",
+        "They should and must have good tools, medical devices, and smart paramedics because the thing would aid to your safety of transportation.",
       ],
     },
     {

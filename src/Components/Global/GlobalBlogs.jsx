@@ -11,7 +11,7 @@ const GlobalBlogs = ({ blogData }) => {
               <>
                 <div>
                   <h1 className="lg:text-lg  text-sm text-center font-bold  text-primary-color">{elem?.title}</h1>
-                  <p className="text-xs lg:text-sm font-medium lg:my-2 my-2 text-center text-primary-color">{elem?.desc}</p>
+                  <p className="text-[0.7rem] lg:text-sm font-medium lg:my-2 my-2 text-center text-primary-color">{elem?.desc}</p>
                 </div>
               </>
             );
