@@ -17,21 +17,21 @@ const IndividualBlog = () => {
           <h1 className="text-primary-color lg:text-xl text-sm text-center font-bold">
             {title}
           </h1>
-          <div className="flex lg:my-4 my-2 justify-evenly mx-auto items-center">
-            <div className="flex items-center lg:text-sm text-xs text-gray-700 font-semibold">
-              <FaCalendar className="text-primary-color mx-2" />
+          <div className="flex  w-full  lg:my-4 my-3.5  justify-evenly mx-auto lg:items-center">
+            <div className="flex lg:flex-row flex-col lg:max-w-0 max-w-32 items-center lg:text-sm text-[0.6rem] text-gray-700 font-semibold">
+              <FaCalendar className="text-primary-color lg:text-sm text-xs mx-2" />
               {date}
             </div>
-            <div className="flex items-center lg:text-sm text-xs text-gray-700 font-semibold">
-              <FaUser className="text-primary-color mx-2" />
+            <div className="flex lg:flex-row flex-col lg:max-w-0 max-w-32 items-center lg:text-sm text-[0.6rem] text-gray-700 font-semibold">
+              <FaUser className="text-primary-color lg:text-sm text-xs mx-2" />
               admin
             </div>
-            <div className="flex items-center lg:text-sm text-xs text-gray-700 font-semibold">
-              <FaTags className="text-primary-color mx-2" />
+            <div className="flex lg:flex-row flex-col lg:max-w-0 max-w-32 items-center lg:text-sm text-[0.6rem] text-gray-700 font-semibold">
+              <FaTags className="text-primary-color lg:text-sm text-xs mx-2" />
               Air Ambulance Cost, air ambulance services
             </div>
           </div>
-          <p className="text-primary-color lg:my-4 my-2 text-sm text-center font-medium">
+          <p className="text-primary-color lg:my-4 my-2 lg:text-sm text-xs text-center font-medium">
             {desc}
           </p>
           <img
@@ -44,7 +44,7 @@ const IndividualBlog = () => {
           <ul className="lg:-mt-10 -mt-7">
             {points?.map((point, index) => {
               return (
-                <li className="text-primary-color list-decimal lg:my-4 my-2 text-sm text-center font-bold">
+                <li className="text-primary-color list-decimal lg:my-4 my-2 lg:text-sm text-[0.64rem]  text-center font-bold">
                   {point}
                 </li>
               );
