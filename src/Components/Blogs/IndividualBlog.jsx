@@ -18,15 +18,15 @@ const IndividualBlog = () => {
             {title}
           </h1>
           <div className="flex  w-full  lg:my-4 my-3.5  justify-evenly mx-auto lg:items-center">
-            <div className="flex lg:flex-row flex-col lg:max-w-0 max-w-32 items-center lg:text-sm text-[0.6rem] text-gray-700 font-semibold">
+            <div className="flex lg:flex-row flex-col lg:max-w-full max-w-32 items-center lg:text-sm text-[0.6rem] text-gray-700 font-semibold">
               <FaCalendar className="text-primary-color lg:text-sm text-xs mx-2" />
               {date}
             </div>
-            <div className="flex lg:flex-row flex-col lg:max-w-0 max-w-32 items-center lg:text-sm text-[0.6rem] text-gray-700 font-semibold">
+            <div className="flex lg:flex-row flex-col lg:max-w-0 lg:max-w-full max-w-32 items-center lg:text-sm text-[0.6rem] text-gray-700 font-semibold">
               <FaUser className="text-primary-color lg:text-sm text-xs mx-2" />
               admin
             </div>
-            <div className="flex lg:flex-row flex-col lg:max-w-0 max-w-32 items-center lg:text-sm text-[0.6rem] text-gray-700 font-semibold">
+            <div className="flex lg:flex-row flex-col lg:max-w-0 lg:max-w-full max-w-32 items-center lg:text-sm text-[0.6rem] text-gray-700 font-semibold">
               <FaTags className="text-primary-color lg:text-sm text-xs mx-2" />
               Air Ambulance Cost, air ambulance services
             </div>
