@@ -13,7 +13,7 @@ const BlogsData = ({ isHeading }) => {
       image:
         "https://s3-alpha-sig.figma.com/img/38ed/fc35/b0609b77a18a0bbf3e9262d849f061b3?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gIbJEURWRwmOLVl7S9HeLRSjAEJ3EGm-A-OmYeGNEN~tjH2Zk2QdFNFZvOIu2jEs2KtOMza1tv8EPUSxlotqoDfoUZM3JTdKypKU-mqGz6hH8bhl-LzwVy~AoDg0i5STsG0kpalgRzKyLmrAXTMKeC8emb9WFzm~K1KwREJjIjy~Frh1diAD4GbKWThpA1liKAVp3blcQPrZYqSma2XgtshE0ryk8mgbBtr8zmuW59whPuhiafm2s0SOQdzgmUzFYBfjSPrFPwNzE33l9R5JIZW7jGx96QGxjmV9CikldjmkYn4n2iPl8O1RKMBSKGF8G1r7~tVrhM4j5x8Wk7ViJA__",
       date: "May 30, 2021",
-      desc: "Confronted with medical emergencies, you are likely to get agile and stressed because those situations are not the easiest of the things to handle and people even with nerves of steels get broken during those medical.....",
+      desc: "Confronted with medical emergencies, you are likely to get agile and stressed because those situations are not the easiest of the things to handle and people even with nerves of steels get broken during those medical emergency situations, you definitely need a good ambulance service provider at that time.",
     },
     {
       title:
@@ -90,7 +90,7 @@ const BlogsData = ({ isHeading }) => {
                     <h1 className="text-[0.7rem] text-primary-color font-extrabold text-center">
                       {elem?.title}
                     </h1>
-                    <p className="lg:text-xs text-[0.65rem] text-center text-gray-900 font-medium">
+                    <p className="lg:text-xs text-[0.65rem] line-clamp-6 text-center text-gray-900 font-medium">
                       {elem?.desc}
                     </p>
                   </div>
