@@ -4,13 +4,14 @@ import { FaCalendar, FaUser } from "react-icons/fa6";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Carousel } from "antd";
 
-const BlogsData = ({isHeading}) => {
-    const [slides,setSlides] = useState(3)
+const BlogsData = ({ isHeading }) => {
+  const [slides, setSlides] = useState(3);
   const blogsData = [
     {
       title:
         "How Smart Ambulance Service Can Help You with Medical Emergencies",
-      image: "./Home/Blog-1.png",
+      image:
+        "https://s3-alpha-sig.figma.com/img/38ed/fc35/b0609b77a18a0bbf3e9262d849f061b3?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gIbJEURWRwmOLVl7S9HeLRSjAEJ3EGm-A-OmYeGNEN~tjH2Zk2QdFNFZvOIu2jEs2KtOMza1tv8EPUSxlotqoDfoUZM3JTdKypKU-mqGz6hH8bhl-LzwVy~AoDg0i5STsG0kpalgRzKyLmrAXTMKeC8emb9WFzm~K1KwREJjIjy~Frh1diAD4GbKWThpA1liKAVp3blcQPrZYqSma2XgtshE0ryk8mgbBtr8zmuW59whPuhiafm2s0SOQdzgmUzFYBfjSPrFPwNzE33l9R5JIZW7jGx96QGxjmV9CikldjmkYn4n2iPl8O1RKMBSKGF8G1r7~tVrhM4j5x8Wk7ViJA__",
       date: "May 30, 2021",
       desc: "Confronted with medical emergencies, you are likely to get agile and stressed because those situations are not the easiest of the things to handle and people even with nerves of steels get broken during those medical.....",
     },
@@ -35,23 +36,32 @@ const BlogsData = ({isHeading}) => {
     },
   ];
 
-   useEffect(() => {
-      const updateSlides = () => {
-        setSlides(window.outerWidth > 768 ? 3 : 1);
-      };
-  
-      window.addEventListener("resize", updateSlides);
-      updateSlides(); // Initial call
-  
-      return () => window.removeEventListener("resize", updateSlides);
-    }, []);
+  useEffect(() => {
+    const updateSlides = () => {
+      setSlides(window.outerWidth > 768 ? 3 : 1);
+    };
+
+    window.addEventListener("resize", updateSlides);
+    updateSlides(); // Initial call
+
+    return () => window.removeEventListener("resize", updateSlides);
+  }, []);
   return (
     <ScrollAnimation animateIn="fadeIn" duration={1.5}>
       <Container>
-      {isHeading &&  <h1 className="lg:text-2xl text-sm text-center lg:my-4 my-2 font-bold text-primary-color">
-          Our Blogs
-        </h1>}
-        <Carousel autoplay autoplaySpeed={1500} slidesToShow={slides} infinite loop className="flex justify-between  mx-auto">
+        {isHeading && (
+          <h1 className="lg:text-2xl text-sm text-center lg:my-4 my-2 font-bold text-primary-color">
+            Our Blogs
+          </h1>
+        )}
+        <Carousel
+          autoplay
+          autoplaySpeed={1500}
+          slidesToShow={slides}
+          infinite
+          loop
+          className="flex justify-between  mx-auto"
+        >
           {blogsData?.map((elem, index) => {
             return (
               <>
