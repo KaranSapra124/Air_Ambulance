@@ -1,67 +1,69 @@
 import React, { useState } from "react";
 import GlobalHero from "../Global/GlobalHero";
 import GlobalContentContainer from "../Global/GlobalContentContainer";
+import { Modal } from "antd";
+import GlobalLocations from "../Global/GlobalLocations";
 
 const InternationalServices = () => {
   const [open, setOpen] = useState(false);
   const destinations = [
     {
-      country: "USA",
+      state: "USA",
       description:
         "Hospital booking and assistance: We understand the fact that our patients are in a nerve-wracking situation and they might not be in the frame of mind to negotiate. Therefore, we have a team to assess your treatment needs and find the right package for you. Since we are partnered with medical facilities, we as the competent medical flight services in India to USA offer the best possible packages. If you are looking for emergency air ambulances in India to New York, then you should consider us. We have the quickest emergency service. Combined with the best technology, expertise and skills, we offer the perfect service. Call us now.",
     },
     {
-      country: "Bangkok",
+      state: "Bangkok",
       description:
         "Hospital booking and assistance: We provide air ambulance services from India to Bangkok for emergency medical transportation. Our expert team ensures the best medical care and hassle-free service during transit. With our strong network and medical partnerships, we guarantee quick and reliable transportation. Call us now.",
     },
     {
-      country: "Bangladesh",
+      state: "Bangladesh",
       description:
         "If you are in Bangladesh and seeking emergency medical transportation to India, our air ambulance services are here for you. We ensure quick, safe, and reliable transfers for critical patients. Contact us for assistance.",
     },
     {
-      country: "Colombo",
+      state: "Colombo",
       description:
         "Our air ambulance services from Colombo to India offer emergency medical transportation for patients in need. With highly equipped flights and expert medical teams, we ensure quick and safe transportation. Call us for more information.",
     },
     {
-      country: "Dhaka",
+      state: "Dhaka",
       description:
         "Our air ambulance services from Dhaka to India provide reliable and fast medical transportation. We handle all necessary arrangements to ensure a smooth and safe journey for critical patients. Contact us for more information.",
     },
     {
-      country: "Dubai",
+      state: "Dubai",
       description:
         "We offer high-quality air ambulance services from Dubai to India. Our team ensures seamless medical transportation for patients requiring critical care. With advanced medical facilities on board, we provide safe and quick transportation. Call us now.",
     },
     {
-      country: "Kabul",
+      state: "Kabul",
       description:
         "Our air ambulance services from Kabul to India provide efficient and fast medical transportation. We have experienced medical professionals and advanced facilities to ensure patient safety. Contact us for immediate assistance.",
     },
     {
-      country: "Kathmandu",
+      state: "Kathmandu",
       description:
         "We provide air ambulance services from Kathmandu to India with a team of highly skilled professionals. Our priority is to offer quick and secure medical transportation for critical patients. Call us for assistance.",
     },
     {
-      country: "Muscat",
+      state: "Muscat",
       description:
         "Our air ambulance services from Muscat to India provide rapid medical transportation for critical patients. With advanced medical care on board, we ensure safe and quick transfers. Contact us now.",
     },
     {
-      country: "Singapore",
+      state: "Singapore",
       description:
         "We provide air ambulance services from Singapore to India for critical medical transportation. Our highly skilled medical team ensures safe and reliable transfers. Call us for more information.",
     },
     {
-      country: "United Kingdom",
+      state: "United Kingdom",
       description:
         "Our air ambulance services from the United Kingdom to India offer quick and reliable medical transportation. We guarantee patient safety and quality care throughout the journey. Contact us now.",
     },
     {
-      country: "Silchar",
+      state: "Silchar",
       description:
         "We offer air ambulance services from Silchar to various medical facilities across India. Our team ensures fast and safe transportation for critical patients. Contact us now.",
     },
@@ -79,11 +81,7 @@ const InternationalServices = () => {
           "DHHR offers a comprehensive range of international services, including top-tier air ambulance services.  We are dedicated to providing rapid response in life-threatening situations, understanding the critical nature of timely intervention.  Our primary goal is saving lives, and we strive to offer affordable solutions, never refusing a call based on ability to pay.  We prioritize immediate action and life preservation, handling financial arrangements afterward.  Driven by a commitment to human life, we are more than just a business; we are dedicated to serving and protecting our community.",
         ]}
       />
-      <LocationModal
-        onClose={() => setOpen(false)}
-        open={open}
-        data={destinations}
-      />
+      <GlobalLocations data={destinations} className={"gap-4 lg:max-w-screen-xl max-w-screen-sm m-2 lg:p-0 p-2   mx-auto grid lg:grid-cols-8 grid-cols-3  flex-wrap"}  title={"DHHR is available in all these locations:"}/>
     </>
   );
 };
