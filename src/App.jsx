@@ -15,6 +15,7 @@ import Emergency from "./Components/DropDown/Emergency";
 import Ambulance_In_IGI from "./Components/DropDown/Ambulance_In_IGI";
 import IndividualBlog from "./Components/Blogs/IndividualBlog";
 import NationalServices from "./Components/DropDown/NationalServices";
+import InternationalServices from "./Components/DropDown/InternationalServices";
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,11 @@ const router = createBrowserRouter([
       { path: "/emergency", element: <Emergency /> },
       { path: "/ambulance-igi", element: <Ambulance_In_IGI /> },
       { path: "/Blog-Page/:id", element: <IndividualBlog /> },
-      {path:"/national-services",element:<NationalServices/>}
+      { path: "/national-services", element: <NationalServices /> },
+      {
+        path: "/internation-services",
+        element: <InternationalServices />,
+      },
     ],
   },
 ]);
