@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       { path: "/Blog-Page/:id", element: <IndividualBlog /> },
       { path: "/national-services", element: <NationalServices /> },
       {
-        path: "/internation-services",
+        path: "/international-services",
         element: <InternationalServices />,
       },
     ],
