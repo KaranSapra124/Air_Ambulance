@@ -25,6 +25,7 @@ const Navbar = () => {
     { title: "Emergency Ambulance", link: "/emergency" },
     { title: "Industrial Health", link: "/industrial-health" },
     { title: "Ambulance Fabrication", link: "/ambulance-fabrication" },
+    { title: "Home Care", link: "/home-care" },
   ];
 
   const worldwideDropdown = [
