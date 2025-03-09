@@ -16,6 +16,7 @@ import Ambulance_In_IGI from "./Components/DropDown/Ambulance_In_IGI";
 import IndividualBlog from "./Components/Blogs/IndividualBlog";
 import NationalServices from "./Components/DropDown/NationalServices";
 import InternationalServices from "./Components/DropDown/InternationalServices";
+import IndustrialHealth from "./Components/DropDown/IndustrialHealth";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/international-services",
         element: <InternationalServices />,
+      },
+      {
+        path: "/industrial-health",
+        element: <IndustrialHealth />,
       },
     ],
   },

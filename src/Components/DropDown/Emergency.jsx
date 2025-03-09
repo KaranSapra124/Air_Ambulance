@@ -25,7 +25,7 @@ const Emergency = () => {
           "Quick response: We offer a quick response to all our patients because we understand the fact that it is important to act fast because minutes delay on an emergency situation can be fatal for the patients. Hence, we have smart dispatcher system to send ambulances as quickly as possible.",
         ]}
       />
-      <div className="-mt-16">
+      <div className="lg:-mt-16 -mt-8">
         <GlobalContentContainer
           image={
             "https://s3-alpha-sig.figma.com/img/5937/03c3/2a56a5689b8f1d78fe38fa3e56c9b030?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C1f16Od2TpGCe9ab~3uAexvGF0Qo3315hqMcQuU76RWdttDnnfwjf0w7utpDPYp1GJ8iZZ-ZdQnIX5ZQuRJ9dFzq0e9ojCpFDtVw8nk1llDLpUdIf6JILybcQo9TlDoyPk7RRmq~GbNKW~LKkB78qcikoP9UcgUfS2YHdq9IO7yVlbwpi5E5v4iRVxWlV~R7QnsHEU2sXPj5fwyB~acXPW8vtGsGk2SIaxY-UId8mlmdhyjpDJ9k1BnDgEk0ymZKoqXtmvVFWe7vdfcEVvpj5LFqotcpkTY3pQfLq0o0mizTVLDgL6Dh1XufCY1oqRyrQ-V4wOTT8Ytiy27S52erlA__"
