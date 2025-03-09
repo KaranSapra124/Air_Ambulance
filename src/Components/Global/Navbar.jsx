@@ -24,6 +24,7 @@ const Navbar = () => {
     { title: "Stretcher Assistance", link: "/stretcher" },
     { title: "Emergency Ambulance", link: "/emergency" },
     { title: "Industrial Health", link: "/industrial-health" },
+    { title: "Ambulance Fabrication", link: "/ambulance-fabrication" },
   ];
 
   const worldwideDropdown = [
@@ -50,7 +51,9 @@ const Navbar = () => {
               <div
                 key={index}
                 className="relative"
-                onMouseEnter={() => setIsDropdownOpen(elem.hasDropdown ? index : null)}
+                onMouseEnter={() =>
+                  setIsDropdownOpen(elem.hasDropdown ? index : null)
+                }
                 onMouseLeave={() => setIsDropdownOpen(null)}
               >
                 {elem.hasDropdown ? (
@@ -58,7 +61,10 @@ const Navbar = () => {
                     {elem.title}
                     {isDropdownOpen === index && (
                       <div className="absolute z-50 left-0 mt-2 w-48 bg-primary-color shadow-md">
-                        {(elem.title === "Services" ? servicesDropdown : worldwideDropdown).map((subItem, subIndex) => (
+                        {(elem.title === "Services"
+                          ? servicesDropdown
+                          : worldwideDropdown
+                        ).map((subItem, subIndex) => (
                           <Link
                             key={subIndex}
                             to={subItem.link}
@@ -71,7 +77,10 @@ const Navbar = () => {
                     )}
                   </div>
                 ) : (
-                  <Link className="text-white lg:text-lg text-xs" to={elem.link}>
+                  <Link
+                    className="text-white lg:text-lg text-xs"
+                    to={elem.link}
+                  >
                     {elem.title}
                   </Link>
                 )}
@@ -93,12 +102,17 @@ const Navbar = () => {
                 {elem.hasDropdown ? (
                   <div
                     className="text-white cursor-pointer text-xs"
-                    onClick={() => setIsDropdownOpen(isDropdownOpen === index ? null : index)}
+                    onClick={() =>
+                      setIsDropdownOpen(isDropdownOpen === index ? null : index)
+                    }
                   >
                     {elem.title}
                     {isDropdownOpen === index && (
                       <div className="mt-2 bg-primary-color shadow-md">
-                        {(elem.title === "Services" ? servicesDropdown : worldwideDropdown).map((subItem, subIndex) => (
+                        {(elem.title === "Services"
+                          ? servicesDropdown
+                          : worldwideDropdown
+                        ).map((subItem, subIndex) => (
                           <Link
                             key={subIndex}
                             to={subItem.link}
@@ -111,7 +125,10 @@ const Navbar = () => {
                     )}
                   </div>
                 ) : (
-                  <Link className="text-white block lg:text-lg text-xs" to={elem.link}>
+                  <Link
+                    className="text-white block lg:text-lg text-xs"
+                    to={elem.link}
+                  >
                     {elem.title}
                   </Link>
                 )}

@@ -17,6 +17,7 @@ import IndividualBlog from "./Components/Blogs/IndividualBlog";
 import NationalServices from "./Components/DropDown/NationalServices";
 import InternationalServices from "./Components/DropDown/InternationalServices";
 import IndustrialHealth from "./Components/DropDown/IndustrialHealth";
+import AmbulanceFabrication from "./Components/DropDown/AmbulanceFabrication";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/industrial-health",
         element: <IndustrialHealth />,
+      },
+      {
+        path: "/ambulance-fabrication",
+        element: <AmbulanceFabrication />,
       },
     ],
   },
