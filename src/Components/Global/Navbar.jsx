@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { FaBars, FaDownload, FaTimes, FaWhatsapp } from "react-icons/fa";
 import SubNavbar from "../Global/SubNavbar";
@@ -7,6 +7,27 @@ import Footer from "./Footer";
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const divRef = useRef(null);
+
+  const handleHover = () => {
+    divRef.current.className =
+      "fixed right-0 top-1/2 transform translate-x-0  duration-300 -translate-y-1/2 z-50";
+  };
+  const handleMouseOut = () => {
+    divRef.current.className =
+      "fixed right-0 top-1/2 transform translate-x-32 lg:translate-x-36  duration-300 -translate-y-1/2 z-50";
+  };
+
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/91XXXXXXXXXX", "_blank");
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/assets/Brochure.pdf"; // PDF ka path yaha daal de
+    link.download = "Company-Brochure.pdf";
+    link.click();
+  };
 
   const linksArr = [
     { title: "Home", link: "/" },
@@ -138,25 +159,33 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
+
+      {/* Floating WhatsApp & Download Section */}
+      <div
+        onMouseEnter={handleHover}
+        onMouseLeave={() => handleMouseOut()}
+        ref={divRef}
+        className="fixed right-0 top-1/2 transform translate-x-32 lg:translate-x-36 duration-300 -translate-y-1/2 z-50"
+      >
         {/* WhatsApp Section */}
         <div
           className="flex items-center w-full gap-2 bg-primary-color text-white px-2 py-2 rounded-l-lg shadow-lg
-  translate-x-[85%] lg:translate-x-[80%] hover:translate-x-0 transition-all duration-300 cursor-pointer"
+  transition-all duration-300 cursor-pointer"
+          onClick={handleWhatsAppClick}
         >
-          <FaWhatsapp className="lg:text-xl text-xs" />
-          <span className="whitespace-nowrap   transition-all duration-300 hover:opacity-100 ml-2">
+          <FaWhatsapp className="text-xs sm:text-sm lg:text-xl" />
+          <span className="whitespace-nowrap lg:text-sm text-xs transition-all duration-300 hover:opacity-100 ml-2">
             Chat With Us
           </span>
         </div>
 
         {/* Download Section */}
         <div
-          className="flex items-center w-full gap-2 bg-primary-color text-white px-3 py-2 rounded-l-lg shadow-lg mt-2
-  translate-x-[85%] lg:translate-x-[80%] hover:translate-x-0 transition-all duration-300 cursor-pointer"
+          className="flex items-center w-full gap-2 bg-primary-color text-white px-3 py-2 rounded-l-lg shadow-lg mt-2 transition-all duration-300 cursor-pointer"
+          onClick={handleDownload}
         >
-          <FaDownload className="text-xs lg:text-xl" />
-          <span className="whitespace-nowrap  transition-all duration-300 hover:opacity-100 ml-2">
+          <FaDownload className="text-xs sm:text-sm lg:text-xl" />
+          <span className="whitespace-nowrap lg:text-sm text-xs transition-all duration-300 hover:opacity-100 ml-2">
             Download Brochure
           </span>
         </div>
