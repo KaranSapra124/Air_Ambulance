@@ -23,7 +23,7 @@ const Home = () => {
       <Contact />
 
       {/* Floating WhatsApp Button */}
-      <a
+      {/* <a
         href="https://wa.me/7678126262" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
@@ -34,7 +34,7 @@ const Home = () => {
           alt="WhatsApp"
           className="w-12 h-12"
         />
-      </a>
+      </a> */}
     </>
   );
 };
