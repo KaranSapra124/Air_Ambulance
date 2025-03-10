@@ -1,6 +1,12 @@
 import React, { useRef, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { FaBars, FaDownload, FaTimes, FaWhatsapp } from "react-icons/fa";
+import {
+  FaBars,
+  FaDownload,
+  FaMobile,
+  FaTimes,
+  FaWhatsapp,
+} from "react-icons/fa";
 import SubNavbar from "../Global/SubNavbar";
 import Footer from "./Footer";
 
@@ -21,6 +27,12 @@ const Navbar = () => {
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/917678126262", "_blank");
   };
+
+  const handleCall =()=>{
+    const link = document.createElement("a");
+    link.href = "tel:76781262626"
+    link.click();
+  }
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -195,6 +207,16 @@ const Navbar = () => {
             className="whitespace-nowrap lg:text-sm text-xs transition-all duration-300 hover:opacity-100 ml-2"
           >
             Download Brochure
+          </span>
+        </div>
+        {/* Download Section */}
+        <div className="flex items-center w-full gap-2 bg-primary-color text-white px-3 py-2 rounded-l-lg shadow-lg mt-2 transition-all duration-300 cursor-pointer">
+          <FaMobile className="text-xs sm:text-sm lg:text-xl" />
+          <span
+            onClick={handleCall}
+            className="whitespace-nowrap lg:text-sm text-xs transition-all duration-300 hover:opacity-100 ml-2"
+          >
+            Call Us
           </span>
         </div>
       </div>
