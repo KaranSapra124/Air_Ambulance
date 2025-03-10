@@ -11,11 +11,11 @@ const Navbar = () => {
 
   const handleHover = () => {
     divRef.current.className =
-      "fixed right-0 top-1/2 transform translate-x-0  duration-300 -translate-y-1/2 z-50";
+      "fixed right-0 bg-white p-1 top-1/2 transform translate-x-0  duration-300 -translate-y-1/2 z-50";
   };
   const handleMouseOut = () => {
     divRef.current.className =
-      "fixed right-0 top-1/2 transform translate-x-32 lg:translate-x-36  duration-300 -translate-y-1/2 z-50";
+      "fixed right-0 bg-white p-1 top-1/2 transform translate-x-32 lg:translate-x-36  duration-300 -translate-y-1/2 z-50";
   };
 
   const handleWhatsAppClick = () => {
@@ -165,7 +165,7 @@ const Navbar = () => {
         onMouseEnter={handleHover}
         onMouseLeave={() => handleMouseOut()}
         ref={divRef}
-        className="fixed right-0 top-1/2 transform translate-x-32 lg:translate-x-36 duration-300 -translate-y-1/2 z-50"
+        className="fixed bg-white p-1 rounded-l-md right-0 top-1/2 transform translate-x-32 lg:translate-x-36 duration-300 -translate-y-1/2 z-50"
       >
         {/* WhatsApp Section */}
         <div
