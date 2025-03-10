@@ -13,12 +13,7 @@ import MedicalAssistance from "./Components/DropDown/MedicalAssistance";
 import Stretcher from "./Components/DropDown/Stretcher";
 import Emergency from "./Components/DropDown/Emergency";
 import Ambulance_In_IGI from "./Components/DropDown/Ambulance_In_IGI";
-import IndividualBlog from "./Components/Blogs/IndividualBlog";
-import NationalServices from "./Components/DropDown/NationalServices";
-import InternationalServices from "./Components/DropDown/InternationalServices";
-import IndustrialHealth from "./Components/DropDown/IndustrialHealth";
-import AmbulanceFabrication from "./Components/DropDown/AmbulanceFabrication";
-import HomeCare from "./Components/DropDown/HomeCare";
+import BlogsPage from "./pages/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +24,7 @@ const router = createBrowserRouter([
       { path: "/about-us", element: <AboutUs /> },
       { path: "/services", element: <Services /> },
       { path: "/worldwide-solutions", element: <WorldwideSolutions /> },
-      { path: "/blogs", element: <Blogs /> },
+      { path: "/blogs", element: <BlogsPage /> },
       { path: "/air-ambulance", element: <Air_Ambulance /> },
       { path: "/train-ambulance", element: <Train_Ambulance /> },
       { path: "/road-ambulance", element: <Ambulance /> },
@@ -37,24 +32,6 @@ const router = createBrowserRouter([
       { path: "/stretcher", element: <Stretcher /> },
       { path: "/emergency", element: <Emergency /> },
       { path: "/ambulance-igi", element: <Ambulance_In_IGI /> },
-      { path: "/Blog-Page/:id", element: <IndividualBlog /> },
-      { path: "/national-services", element: <NationalServices /> },
-      {
-        path: "/international-services",
-        element: <InternationalServices />,
-      },
-      {
-        path: "/industrial-health",
-        element: <IndustrialHealth />,
-      },
-      {
-        path: "/ambulance-fabrication",
-        element: <AmbulanceFabrication />,
-      },
-      {
-        path: "/home-care",
-        element: <HomeCare />,
-      },
     ],
   },
 ]);
