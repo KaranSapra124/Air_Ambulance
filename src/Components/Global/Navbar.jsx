@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/91XXXXXXXXXX", "_blank");
+    window.open("https://wa.me/917678126262", "_blank");
   };
 
   const handleDownload = () => {
@@ -171,21 +171,23 @@ const Navbar = () => {
         <div
           className="flex items-center w-full gap-2 bg-primary-color text-white px-2 py-2 rounded-l-lg shadow-lg
   transition-all duration-300 cursor-pointer"
-          onClick={handleWhatsAppClick}
         >
           <FaWhatsapp className="text-xs sm:text-sm lg:text-xl" />
-          <span className="whitespace-nowrap lg:text-sm text-xs transition-all duration-300 hover:opacity-100 ml-2">
+          <span
+            onClick={handleWhatsAppClick}
+            className="whitespace-nowrap lg:text-sm text-xs transition-all duration-300 hover:opacity-100 ml-2"
+          >
             Chat With Us
           </span>
         </div>
 
         {/* Download Section */}
-        <div
-          className="flex items-center w-full gap-2 bg-primary-color text-white px-3 py-2 rounded-l-lg shadow-lg mt-2 transition-all duration-300 cursor-pointer"
-          onClick={handleDownload}
-        >
+        <div className="flex items-center w-full gap-2 bg-primary-color text-white px-3 py-2 rounded-l-lg shadow-lg mt-2 transition-all duration-300 cursor-pointer">
           <FaDownload className="text-xs sm:text-sm lg:text-xl" />
-          <span className="whitespace-nowrap lg:text-sm text-xs transition-all duration-300 hover:opacity-100 ml-2">
+          <span
+            onClick={handleDownload}
+            className="whitespace-nowrap lg:text-sm text-xs transition-all duration-300 hover:opacity-100 ml-2"
+          >
             Download Brochure
           </span>
         </div>
