@@ -71,18 +71,24 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center gap-6">
             {linksArr.map((elem, index) => (
               <div
-                key={index}
                 className="relative"
                 onMouseEnter={() =>
                   setIsDropdownOpen(elem.hasDropdown ? index : null)
                 }
-                onMouseLeave={() => setIsDropdownOpen(null)}
+                onMouseLeave={(e) => {
+                  if (
+                    !e.relatedTarget ||
+                    !e.relatedTarget.closest(".dropdown-item")
+                  ) {
+                    setIsDropdownOpen(null);
+                  }
+                }}
               >
                 {elem.hasDropdown ? (
                   <div className="text-white cursor-pointer relative lg:text-lg text-xs">
                     {elem.title}
                     {isDropdownOpen === index && (
-                      <div className="absolute z-50 left-0 mt-2 w-48 bg-primary-color shadow-md">
+                      <div className="absolute z-50 left-0  w-48 bg-primary-color shadow-md">
                         {(elem.title === "Services"
                           ? servicesDropdown
                           : worldwideDropdown
@@ -90,7 +96,7 @@ const Navbar = () => {
                           <Link
                             key={subIndex}
                             to={subItem.link}
-                            className="block px-4 py-2 text-white border-b text-center lg:text-lg text-xs hover:bg-red-800"
+                            className="block px-4 py-2 text-white border-b text-center lg:text-sm font-semibold text-xs hover:bg-red-800"
                           >
                             {subItem.title}
                           </Link>
