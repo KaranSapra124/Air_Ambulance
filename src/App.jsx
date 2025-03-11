@@ -17,6 +17,8 @@ import BlogsPage from "./pages/Blogs";
 import IndustrialHealth from "./Components/DropDown/IndustrialHealth";
 import InternationalServices from "./Components/DropDown/InternationalServices";
 import NationalServices from "./Components/DropDown/NationalServices";
+import BlogsData from "./Components/Blogs/BlogsData";
+import IndividualBlog from "./Components/Blogs/IndividualBlog";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,7 @@ const router = createBrowserRouter([
       { path: "/services", element: <Services /> },
       { path: "/worldwide-solutions", element: <WorldwideSolutions /> },
       { path: "/blogs", element: <BlogsPage /> },
+      { path: "/Blog-Page", element: <IndividualBlog /> },
       { path: "/air-ambulance", element: <Air_Ambulance /> },
       { path: "/train-ambulance", element: <Train_Ambulance /> },
       { path: "/road-ambulance", element: <Ambulance /> },

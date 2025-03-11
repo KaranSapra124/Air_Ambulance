@@ -74,11 +74,14 @@ const BlogsData = ({ isHeading }) => {
       date: "May 14, 2021",
       desc: "Over the past two decades, the health infrastructure of India has developed substantially. Whether it is normal health checkups or critical care, treatment in Indian is very low. However, the quality of the treatment is comparable to European countries......",
     },
-   
   ];
   const handleOpenBlog = (item, index) => {
-    navigate(`/Blog-Page/${index}`, {
-      state: blogsData,
+    console.log(item);
+    navigate(`/Blog-Page`, {
+      state: {
+        ind: index,
+        data: blogsData,
+      },
     });
   };
 

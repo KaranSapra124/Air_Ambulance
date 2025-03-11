@@ -6,7 +6,7 @@ const SubNavbar = () => {
   return (
     <div className="flex items-center justify-between bg-[#FEFFDE] px-4 py-3 md:px-8">
       {/* Logo */}
-      <img className="w-8 lg:w-20" src="./Home/Logo.png" alt="Logo" />
+      <img className="w-8 lg:w-20" src="Logo.png" alt="Logo" />
 
       {/* Search Box */}
       <div className="relative flex items-center w-full max-w-xs md:max-w-md">

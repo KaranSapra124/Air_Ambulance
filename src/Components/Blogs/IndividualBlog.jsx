@@ -8,20 +8,27 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const IndividualBlog = () => {
   const location = useLocation();
-  const { id } = useParams();
-  const [index, setIndex] = useState(Number(id) || 0);
-  const state = location?.state || { title: "", image: "", image2: "", date: "", arr: [], desc: "", points: [] };
-  
+  const state = location?.state || {
+    title: "",
+    image: "",
+    image2: "",
+    date: "",
+    arr: [],
+    desc: "",
+    points: [],
+  };
+  const { ind, data } = state || {};
+  const [index, setIndex] = useState(ind || 0);
+
   useEffect(() => {
     if (index < 0) setIndex(0);
-    if (index >= state?.length) setIndex(state?.length - 1);
+    if (index >= data?.length) setIndex(state?.length - 1);
   }, [index, state?.length]);
 
   if (!state || state?.length === 0) {
     return <p className="text-center text-red-500">No blog data found.</p>;
   }
-
-  const { title, image, image2, date, arr, desc, points } = state[index] || {};
+  const { title, image, image2, date, arr, desc, points } = data[index];
 
   return (
     <>
@@ -54,20 +61,30 @@ const IndividualBlog = () => {
             ) && (
               <ul className="lg:-mt-2 ">
                 {points?.map((point, idx) => (
-                  <li key={idx} className="text-primary-color lg:my-4 my-2 lg:text-sm text-[0.64rem] text-center font-bold">
+                  <li
+                    key={idx}
+                    className="text-primary-color lg:my-4 my-2 lg:text-sm text-[0.64rem] text-center font-bold"
+                  >
                     <span className="mx-1">{idx + 1}.</span> {point}
                   </li>
                 ))}
               </ul>
             )}
-            <img src={image2} className="lg:my-4 my-2 mx-auto w-full" alt="Blog Image" />
+            <img
+              src={image2}
+              className="lg:my-4 my-2 mx-auto w-full"
+              alt="Blog Image"
+            />
             <GlobalBlogs blogData={arr} />
             {!title?.includes(
               "What Benefits You Get When Using Air Ambulance Services In-Emergency?"
             ) && (
               <ul className="">
                 {points?.map((point, idx) => (
-                  <li key={idx} className="text-primary-color lg:my-4 my-2 lg:text-sm text-[0.64rem] text-center font-bold">
+                  <li
+                    key={idx}
+                    className="text-primary-color lg:my-4 my-2 lg:text-sm text-[0.64rem] text-center font-bold"
+                  >
                     <span className="mx-1">{idx + 1}.</span> {point}
                   </li>
                 ))}
@@ -89,8 +106,10 @@ const IndividualBlog = () => {
               Prev
             </button>
             <button
-              onClick={() => setIndex((prev) => Math.min(state?.length - 1, prev + 1))}
-              disabled={index >= state?.length - 1}
+              onClick={() =>
+                setIndex((prev) => Math.min(data?.length - 1, prev + 1))
+              }
+              disabled={index >= data?.length - 1}
               className="bg-primary-color py-1 px-2 rounded-full text-white font-semibold"
             >
               Next
