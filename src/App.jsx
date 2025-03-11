@@ -14,6 +14,9 @@ import Stretcher from "./Components/DropDown/Stretcher";
 import Emergency from "./Components/DropDown/Emergency";
 import Ambulance_In_IGI from "./Components/DropDown/Ambulance_In_IGI";
 import BlogsPage from "./pages/Blogs";
+import IndustrialHealth from "./Components/DropDown/IndustrialHealth";
+import InternationalServices from "./Components/DropDown/InternationalServices";
+import NationalServices from "./Components/DropDown/NationalServices";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,11 @@ const router = createBrowserRouter([
       { path: "/stretcher", element: <Stretcher /> },
       { path: "/emergency", element: <Emergency /> },
       { path: "/ambulance-igi", element: <Ambulance_In_IGI /> },
+      { path: "/industrial-health", element: <IndustrialHealth /> },
+      { path: "/ambulance-fabrication", element: <Ambulance /> },
+      { path: "/home-care", element: <MedicalAssistance /> },
+      { path: "/national-services", element: <NationalServices /> },
+      { path: "/international-services", element: <InternationalServices /> },
     ],
   },
 ]);
