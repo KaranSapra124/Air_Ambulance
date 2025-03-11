@@ -18,6 +18,7 @@ import IndustrialHealth from "./Components/DropDown/IndustrialHealth";
 import InternationalServices from "./Components/DropDown/InternationalServices";
 import NationalServices from "./Components/DropDown/NationalServices";
 import BlogsData from "./Components/Blogs/BlogsData";
+import AmbulanceFabrication from "./Components/DropDown/AmbulanceFabrication"
 import IndividualBlog from "./Components/Blogs/IndividualBlog";
 
 const router = createBrowserRouter([
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
       { path: "/emergency", element: <Emergency /> },
       { path: "/ambulance-igi", element: <Ambulance_In_IGI /> },
       { path: "/industrial-health", element: <IndustrialHealth /> },
-      { path: "/ambulance-fabrication", element: <Ambulance /> },
+      { path: "/ambulance-fabrication", element: <AmbulanceFabrication /> },
       { path: "/home-care", element: <MedicalAssistance /> },
       { path: "/national-services", element: <NationalServices /> },
       { path: "/international-services", element: <InternationalServices /> },
