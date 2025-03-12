@@ -1,42 +1,96 @@
 import React from "react";
 import GlobalHero from "../Global/GlobalHero";
 import GlobalServiceContent from "../Global/GlobalServiceContent";
-import GlobalContentContainer from "../Global/GlobalContentContainer";
+import GlobalPointsContainer from "../Global/GlobalPointsContainer";
+import Container from "../Global/Container";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const MedicalAssistance = () => {
+  const services = [
+    {
+      title: "Personal Care Assistance",
+      points: [
+        "Bathing, grooming, and hygiene support",
+        "Dressing and mobility assistance",
+        "Toileting and incontinence care",
+      ],
+    },
+    {
+      title: "Companion Care",
+      points: [
+        "Meaningful conversation and emotional support",
+        "Assistance with hobbies and recreational activities",
+        "Accompaniment to appointments and outings",
+      ],
+    },
+    {
+      title: "Meal Preparation & Nutrition Support",
+      points: [
+        "Healthy meal planning and preparation",
+        "Assistance with feeding if needed",
+        "Grocery shopping and dietary monitoring",
+      ],
+    },
+    {
+      title: "Medication Reminders & Health Monitoring",
+      points: [
+        "Ensuring timely medication intake",
+        "Monitoring vital signs",
+        "Complete ICU Care At Home",
+        "Coordinating with healthcare professionals",
+      ],
+    },
+    {
+      title: "Light Housekeeping & Errands",
+      points: [
+        "Laundry and linen changes",
+        "Tidying up living spaces",
+        "Assistance with shopping and errands",
+      ],
+    },
+    {
+      title: "Why Choose Us ?",
+      points: [
+        "Experienced and compassionate Medical Team",
+        "Customized care plans tailored to your needs",
+        "Flexible scheduling: hourly, daily, or live-in care",
+        "Family-focused approach with open communication",
+        "Licensed, bonded, and insured for your peace of mind",
+      ],
+    },
+  ];
+
   return (
     <>
       <GlobalHero
-        title={"Standby Medical Assistance"}
+        title={"Compassionate Home Care Services for Your Loved Ones"}
         image={
-          "https://s3-alpha-sig.figma.com/img/3a4e/9c77/8cfcdbfe85d0692cf6c15f7061631736?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mEg9ad0ionyAQV210EAuzCqZk-SDjBgWH~ObuNezOgJ3UXE9SXZUNl9-d1iWkSwX48tAGHbF8~7u9HP6SydFHkD~hzhSH9ufqdSnMAxbd6uq6fcBKB4uRBPXTlOS4N67UFMX7tAVY3q95MFEGM~u0J9RH7PJRPsm2Tbsb0DJWUdmDqZJcj1E91arJODvpKNwWr7uS2b3UscGWC-Yyjb48TzahWZte2tYHzsRwi6l6SIZ6hQPgOgQrHBxpERmeD9NIQRuR7tB~JDeUid6fP~fLqiDOiurA4JS81za6HILc-ja~47yXmIpUT7V2cv4SPCqVlzU7kqhfC0PZM5MMXAb5g__"
+          "https://plus.unsplash.com/premium_photo-1731540601782-0b701ec87f2e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG9tZSUyMGNhcmUlMjBtZWRpY2FsfGVufDB8fDB8fHww"
         }
       />
+
+      <Container>
+        <h1 className="text-primary-color my-2 text-center lg:text-2xl text-[0.7rem] font-bold">
+          Our Services
+        </h1>
+        <div className="w-10 h-0.5 lg:h-1 bg-primary-color rounded-full mx-auto my-1"></div>
+        
+        {services.map((service, index) => (
+          <ScrollAnimation key={index} animateIn="backInUp" duration={1.5}>
+            <GlobalPointsContainer title={service.title} points={service.points} />
+          </ScrollAnimation>
+        ))}
+      </Container>
+
       <GlobalServiceContent
-        title={"Outsource Quality Medical Services from Certified Staff"}
+        title={"Get Started Today!"}
         content={[
-          "The DHHR is a popular medical emergency service provider that is available at your service 24 x 7. We have an in-house trained and certified staff for all types of medical care. We can guarantee you a premium level of care and no matter, whether you are in need of a full medical team or a single attendee, we offer you the best.",
+          "Let us provide the care and support your loved ones deserve. Contact us today for a free consultation and personalized care plan.",
+          "📞 +91 93551 95077",
+          "📧 test@test.com",
+          "📍 address",
         ]}
       />
-      <GlobalContentContainer
-        title={"On-site medical care service by experts"}
-        content={[
-          "You can call as the best stand by medical services provider because we include a different number of expert personnel which includes medical technicians like nurses, emergency responders, qualified doctors, and others.",
-          "Our onsite medical services also include servicing medical care in outdoor and indoor events, during religious meet, festivals and more. You can outsource or medical services 24 x 7. All our ambulances are best equipped with airway management, oxygen machines, trauma medication, suction, and other tools required for emergency medical care.",
-        ]}
-      />
-    <div className="-mt-16">
-    <GlobalContentContainer
-        title={"Medical care even in remote areas"}
-        content={[
-          "Our expert staff members include nurses, physicians, assistants, and other members to form a qualified and certified team. Basically, our sports medical services can be offered at any place. This falls in the category of on-site medical service and it is commonly found in the remote areas. DHHR, promises high-end service from experienced and qualified medical staff. You can call us as the most sought service provider of medical care and treatment. We can assure you of quality rated services, which you will never find anywhere else.",
-        ]}
-        image={
-          "https://s3-alpha-sig.figma.com/img/35e1/5a2c/448b94d11234b0b649c0b579a6500c4a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cXeCdpeVaaYqccGyhrhZ3KAv3olIo4GRM-D8E472JLDfz-PyGZmqTYiyrRjYe-WdGEW-Hu3uD~UItkQHuvI~vKeJrvkfTX9FUSGoFtABQT5ppWYMNNUH-20IAxH~uY-10hJTAsnoAa8CWMZ4Of6MjKPA~gDjLefZ71gVUb-2dTpAktmeB4oBadjZWRmTlb6qIcpB1tE9FirqxWlSPdSyGvO2X49KAgNcnMPUBooDMZozRQobCdgj5aBSKliIwAH9uTSDOLZcrN2w9kv5R6H0E~wuMSjLIWP6Lib80TSWoD2DeReZvgzTvM9kSftF65Mq56z5Ass43U3uEL6wI9mGbw__"
-        }
-      />
-    </div>
-      <GlobalServiceContent title={'24 x 7 emergency care services'} content={['We are also known for offering expert medical care to many of the MNCs in different segments. This includes event sectors, exhibitions, sports and many others. The top-notch medical care services can be easily outsourced from us. We offer comprehensive packages to all these companies and offer quality medical support on time.','No matter, whether you are in need of a medical care in a village, or during any big events or exhibition, our exhibition medical services can come to your rescue and can provide professional medical care in the best possible way. Here, we make sure that all your medical care needs get fulfilled on time and within the budget.','Call us today for fulfilling all your emergency medical needs anywhere and anytime.']}/>
     </>
   );
 };
