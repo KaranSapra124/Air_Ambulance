@@ -123,10 +123,10 @@ const AmbulanceFabrication = () => {
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-red-500/50 bg-opacity-50 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-red-500/20 bg-opacity-50 flex items-center justify-center">
                     <h2
                       key={animateKey} // Key update forces re-animation
-                      className="text-white ambulance-animation text-sm lg:text-3xl font-bold text-center"
+                      className="text-white ambulance-animation text-md lg:text-3xl font-bold text-center"
                     >
                       You Will Think, We Will Do
                     </h2>
