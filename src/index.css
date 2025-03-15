@@ -37,6 +37,11 @@
 .ant-pagination .ant-pagination-item-active a:hover {
   color: #d1361b;
 }
+.ambulance-animation {
+  animation: backInUp 2s normal;
+}
+
+
 /* * {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
