@@ -117,13 +117,14 @@ const AmbulanceFabrication = () => {
                 <div key={index} className="relative">
                   {/* Background Image */}
                   <img
-                    className="lg:max-h-[30rem] h-52 w-full"
+                    loading="lazy"
+                    className="lg:h-[35rem] h-52 w-full"
                     src={pic}
                     alt={`Slide ${index}`}
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-red-500/20 bg-opacity-50 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-red-800/50 bg-opacity-50 flex items-center justify-center">
                     <h2
                       key={animateKey} // Key update forces re-animation
                       className="text-white ambulance-animation text-md lg:text-3xl font-bold text-center"
