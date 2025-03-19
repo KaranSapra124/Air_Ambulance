@@ -68,7 +68,11 @@ const AmbulanceFabrication = () => {
           title={"Why Choose Us ?"}
           para={""}
           points={[
-            "High-Quality Fabrication: Built with precision and top-grade materials"," Customization: Tailored solutions to fit your specific needs"," Safety Compliance: Meets all regulatory and industry standards"," Durability & Reliability: Designed for long-term performance"," Affordable & Timely Delivery: Cost-effective solutions with fast turner",
+            "High-Quality Fabrication: Built with precision and top-grade materials",
+            " Customization: Tailored solutions to fit your specific needs",
+            " Safety Compliance: Meets all regulatory and industry standards",
+            " Durability & Reliability: Designed for long-term performance",
+            " Affordable & Timely Delivery: Cost-effective solutions with fast turner",
           ]}
         />
       </Container>
